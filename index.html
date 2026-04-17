@@ -1,0 +1,1123 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/ico/default_64_windows.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClassScore Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+    rel="stylesheet">
+  <script>
+    window.addEventListener('error', function (e) {
+      document.getElementById('dashboard').innerHTML += '<div style="color:red; font-size:18px; padding:20px; border:2px solid red;">ERROR: ' + e.message + '</div>';
+    });
+    window.addEventListener('unhandledrejection', function (e) {
+      document.getElementById('dashboard').innerHTML += '<div style="color:red; font-size:18px; padding:20px; border:2px solid red;">PROMISE ERROR: ' + e.reason + '</div>';
+    });
+  </script>
+</head>
+
+<body>
+  <div class="opening-title-screen">
+    <div class="opening-title-screen-content" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <img src="/ico/default_128_windows.png" alt="">
+      <span class="heading">ClassScore Pro</span>
+      <span class="subheading">Phiên bản 1.0.0 (vi-VN)</span>
+    </div><br><br>
+    <div>
+      <m3e-button variant="tonal" onclick="document.querySelector('m3e-dialog#data-manager').setAttribute('open','')"><m3e-icon name="add" slot="icon"></m3e-icon> Dữ liệu mới</m3e-button>
+      <m3e-button variant="tonal" onclick="document.querySelector('m3e-dialog#data-manager').setAttribute('open','')"><m3e-icon name="folder" slot="icon"></m3e-icon> Mở dữ liệu</m3e-button>
+    </div>
+  </div>
+  <m3e-app-bar style="overflow: visible;">
+    <div slot="title" style="display: flex; width: fit-content; align-items: center; gap: 10px;">
+      <div class="logo" tabindex="0"
+        style="margin-left: 10px; display: flex; align-items: center; gap: 10px; position: relative; width: fit-content; padding: 4px 8px; border-radius: 48px;">
+        <img src="/ico/default_128_windows.png" width="36" alt="">
+        <span style="font-family: 'Google Sans Flex'; font-variation-settings: 'wdth' 120,'ROND' 75;">ClassScore
+          Pro</span>
+        <md-ripple></md-ripple>
+        <md-focus-ring></md-focus-ring>
+      </div>
+      <m3e-button variant="outlined">
+        <m3e-menu-trigger for="class-chooser">Chọn lớp <m3e-icon name="arrow_drop_down"></m3e-icon></m3e-menu-trigger>
+      </m3e-button>
+      <m3e-menu id="class-chooser">
+        <m3e-menu-item onclick="openCreateClassDialog()"><m3e-icon name="add" slot="icon"></m3e-icon><span>Tạo
+            lớp</span></m3e-menu-item>
+      </m3e-menu>
+    </div>
+    <div slot="trailing" style="display: fljex; gap: 10px; align-items: center;">
+      <m3e-icon-button onclick="document.querySelector('m3e-dialog#settings-dialog').setAttribute('open','')">
+        <m3e-icon name="settings"></m3e-icon>
+      </m3e-icon-button>
+      <m3e-icon-button id="minimize">
+        <m3e-icon name="minimize"></m3e-icon>
+      </m3e-icon-button>
+      <m3e-icon-button id="maximize">
+        <m3e-icon name="open_in_full"></m3e-icon>
+      </m3e-icon-button>
+      <m3e-icon-button id="close">
+        <m3e-icon name="close"></m3e-icon>
+      </m3e-icon-button>
+      <!--<m3e-avatar style="position: relative;">
+        <m3e-menu-trigger for="profiles">
+          <m3e-icon name="person"></m3e-icon>
+          <md-ripple style="border-radius: 100px;"></md-ripple>
+        </m3e-menu-trigger>
+      </m3e-avatar>
+      <m3e-menu id="profiles" style="transform: translateX(-10px); width: 200px;">
+        <m3e-menu-item-radio checked>
+          <m3e-icon name="person" slot="icon"></m3e-icon>
+          <span>Profile 1</span>
+        </m3e-menu-item-radio>
+        <m3e-menu-item-radio>
+          <m3e-icon name="person" slot="icon"></m3e-icon>
+          <span>Profile 2</span>
+        </m3e-menu-item-radio>
+        <m3e-menu-item>
+          <m3e-icon name="add" slot="icon"></m3e-icon>
+          <span>Add new profile</span>
+        </m3e-menu-item>
+      </m3e-menu>-->
+    </div>
+  </m3e-app-bar>
+  <div class="search_bar" onclick="activateSearch(this,event)"
+    style="position: absolute; top: 15px; left: 50%; transform: translateX(-50%);">
+    <m3e-icon name="search" style="color:var(--md-sys-color-on-surface-variant);"></m3e-icon>
+    <input type="search" id="searchinput" placeholder="Tìm kiếm...">
+    <md-icon-button><m3e-icon name="close"></m3e-icon>
+    </md-icon-button>
+    <md-ripple></md-ripple>
+  </div>
+  <div class="search_results">
+    <m3e-action-list variant="segmented" id="global-search-results">
+    </m3e-action-list>
+  </div>
+  <div class="content" style="display: flex;">
+    <m3e-nav-rail id="nav-rail">
+      <m3e-icon-button toggle>
+        <m3e-icon name="menu"></m3e-icon>
+        <m3e-icon slot="selected" name="menu_open"></m3e-icon>
+        <m3e-nav-rail-toggle for="nav-rail"></m3e-nav-rail-toggle>
+      </m3e-icon-button>
+
+      <m3e-nav-item onclick="window.location.hash = '/'" selected><m3e-icon slot="icon"
+          name="home"></m3e-icon>Dashboard</m3e-nav-item>
+      <m3e-nav-item onclick="window.location.hash = '/reports'"><m3e-icon slot="icon" name="analytics"></m3e-icon>Phân tích</m3e-nav-item>
+      <m3e-nav-item onclick="window.location.hash = '/classes'"><m3e-icon slot="icon"
+          name="school"></m3e-icon>Lớp</m3e-nav-item>
+      <m3e-nav-item onclick="window.location.hash = '/competition'"><m3e-icon slot="icon" name="trophy"></m3e-icon>Thành tích</m3e-nav-item>
+      <m3e-nav-item onclick="window.location.hash = '/settings'"><m3e-icon slot="icon" name="data_object"></m3e-icon>Tùy chọn dữ liệu</m3e-nav-item>
+    </m3e-nav-rail>
+    <section id="dashboard" style="flex: 1; padding: 24px; overflow-y: auto; display: flex; flex-direction: column;">
+      <br><br>
+      <span class="heading" style="display: block; width: 100%; text-align: center;">Chào mừng đến với ClassScore<span
+          class="username"></span></span>
+      <br>
+      <m3e-button variant="outlined" style="width: fit-content;" class="centered-pos-rel">
+        <m3e-menu-trigger for="class-chooser">Chọn lớp <m3e-icon name="arrow_drop_down"></m3e-icon></m3e-menu-trigger>
+      </m3e-button>
+      <m3e-menu id="class-chooser">
+        <m3e-menu-item onclick="openCreateClassDialog()"><m3e-icon name="add" slot="icon"></m3e-icon><span>Tạo
+            lớp</span></m3e-menu-item>
+      </m3e-menu>
+      <br>
+      <span class="heading" style="display: block;">Tổng quan lớp <span class="classroom-name"></span></span>
+      <br>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px;">
+        <m3e-card><span slot="header">Tổng số học sinh</span><m3e-heading class="heading" slot="content" id="d-total-students" variant="display" size="small">-</m3e-heading></m3e-card>
+        <m3e-card><span slot="header">Xếp loại</span><m3e-heading class="heading" slot="content" id="d-avg-score" variant="display" size="small">-</m3e-heading></m3e-card>
+        <m3e-card onclick="document.querySelector('m3e-dialog#violations-dialog').setAttribute('open','')"><span slot="header">Hạn chế</span><m3e-heading class="heading" slot="content" id="d-at-risk" variant="display" size="small">-</m3e-heading></m3e-card>
+        <m3e-card><span slot="header">Học sinh có điểm cao nhất</span><m3e-heading class="heading" slot="content" id="d-top-perf" variant="display" size="small"></m3e-heading></m3e-card>
+      </div>
+
+      
+      <m3e-dialog id="violations-dialog" dismissible>
+        <span slot="header">Hạn chế - Tuần từ <span class="fromto"></span></span>
+        <!--show list if there are violations-->
+        <!--else show empty UI state by putting display flex to .empty-state and display none to m3e-list-->
+        <m3e-list variant="segmented" style="width: 500px; display: none;">
+          <!--example structure of a violation notification-->
+          <m3e-list-item>
+            <m3e-icon name="person" slot="leading"></m3e-icon>
+            <span>Nguyễn Văn A</span>
+            <span slot="supporting-text" class="specific-violation">1 lỗi ăn quà trong giờ</span>
+            <m3e-icon-button slot="trailing" id="check-item-39320209394"><m3e-icon name="check"></m3e-icon></m3e-icon-button>
+            <m3e-tooltip for="check-item-39320209394">Đã hiểu</m3e-tooltip>
+          </m3e-list-item>
+          <m3e-list-item>
+            <m3e-icon name="person" slot="leading"></m3e-icon>
+            <span>Nguyễn Văn B</span>
+            <span slot="supporting-text" class="specific-violation">1 lỗi đeo thẻ muộn</span> <!--collect data that user typed in-->
+            <m3e-icon-button slot="trailing" id="check-item-39881718383"><m3e-icon name="check"></m3e-icon></m3e-icon-button>
+            <m3e-tooltip for="check-item-39881718383">Đã hiểu</m3e-tooltip>
+          </m3e-list-item>
+        </m3e-list>
+        <div class="empty-state" style="display: flex;">
+          <img src="/empty-ui.webp" style="width: 256px;" alt="">
+          <m3e-heading variant="headline" size="small">Không có hạn chế</m3e-heading>
+        </div>
+      </m3e-dialog>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; height: 300px; margin-bottom: 24px; width: 100%; flex-wrap: wrap;">
+        <m3e-card>
+          <div slot="content" id="d-pie-chart" style=" width: 100%; height: 300px; display: flex; justify-content: center;"></div>
+        </m3e-card>
+        <m3e-card>
+          <div slot="content" id="d-line-chart" style=" width: 100%; height: 300px;"></div>
+        </m3e-card>
+      </div>
+
+      <br><br>
+      <span class="heading" style="display: block;">Xếp hạng tuần này</span>
+      <br>
+      <md-data-table style="--mdc-data-table-width: 800px;" class="centered-margin" aria-label="Xep hang" density
+        paginated page-sizes="[5, 10, 15]" page-sizes-label="Số hàng trên 1 trang" first-row-of-page=""
+        current-page-size="" last-row-of-page="" pagination-total-label=":firstRow-:lastRow của :totalRows">
+        <md-data-table-column style="width: 75px;" sortable="">STT</md-data-table-column>
+        <md-data-table-column sortable="">Họ và tên</md-data-table-column>
+        <md-data-table-column sortable="">Điểm</md-data-table-column>
+        <md-data-table-column sortable="">Xếp loại</md-data-table-column>
+
+        <md-data-table-row>
+          <md-data-table-cell style="width: 75px;" type="numeric">1</md-data-table-cell>
+          <md-data-table-cell>Nguyễn Văn A</md-data-table-cell>
+          <md-data-table-cell type="numeric" style="text-align: start;">110</md-data-table-cell>
+          <md-data-table-cell>Xuất sắc</md-data-table-cell>
+        </md-data-table-row>
+        <md-data-table-row>
+          <md-data-table-cell style="width: 75px;" type="numeric">2</md-data-table-cell>
+          <md-data-table-cell>Nguyễn Văn B</md-data-table-cell>
+          <md-data-table-cell type="numeric" style="text-align: start;">100</md-data-table-cell>
+          <md-data-table-cell>Tốt</md-data-table-cell>
+        </md-data-table-row>
+        <md-data-table-row>
+          <md-data-table-cell style="width: 75px;" type="numeric">3</md-data-table-cell>
+          <md-data-table-cell>Nguyễn Văn C</md-data-table-cell>
+          <md-data-table-cell type="numeric" style="text-align: start;">79</md-data-table-cell>
+          <md-data-table-cell>Khá</md-data-table-cell>
+        </md-data-table-row>
+        <md-data-table-row>
+          <md-data-table-cell style="width: 75px;" type="numeric">4</md-data-table-cell>
+          <md-data-table-cell>Nguyễn Văn D</md-data-table-cell>
+          <md-data-table-cell type="numeric" style="text-align: start;">58</md-data-table-cell>
+          <md-data-table-cell>Trung bình</md-data-table-cell>
+        </md-data-table-row>
+        <md-data-table-row>
+          <md-data-table-cell style="width: 75px;" type="numeric">5</md-data-table-cell>
+          <md-data-table-cell>Nguyễn Văn E</md-data-table-cell>
+          <md-data-table-cell type="numeric" style="text-align: start;">40</md-data-table-cell>
+          <md-data-table-cell>Yếu</md-data-table-cell>
+        </md-data-table-row>
+      </md-data-table>
+
+    </section>
+
+    <section id="reports" style="display: none; padding: 24px; flex: 1; overflow-y: auto; flex-direction: column;">
+      <!--<m3e-list variant="segmented" class="list-item-notifications">
+        <m3e-list-item>
+          <m3e-icon slot="leading" name="info"></m3e-icon>
+          <span>This is a notification. It is shown once user pushed in the app.</span>
+        </m3e-list-item>
+      </m3e-list>-->
+      <br>
+      <span class="heading">Phân tích tuần này</span><br>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px;">
+        <m3e-card><span slot="header">Tổng số học sinh</span><m3e-heading class="heading" slot="content" id="d-total-students" variant="display" size="small">-</m3e-heading></m3e-card>
+        <m3e-card><span slot="header">Xếp loại</span><m3e-heading class="heading" slot="content" id="d-avg-score" variant="display" size="small">-</m3e-heading></m3e-card>
+        <m3e-card onclick="document.querySelector('m3e-dialog#violations-detailed-dialog').setAttribute('open','')"><span slot="header">Hạn chế</span><m3e-heading class="heading" slot="content" id="d-at-risk" variant="display" size="small">-</m3e-heading></m3e-card>
+        <m3e-card><span slot="header">Học sinh có điểm cao nhất</span><m3e-heading class="heading" slot="content" id="d-top-perf" variant="display" size="small"></m3e-heading></m3e-card>
+      </div>
+      <br>
+      <m3e-list-item>
+        <span class="heading">Phân tích các tuần trước</span><br>
+        <m3e-icon-button slot="trailing" id="this-week-customize"><m3e-icon name="tune"></m3e-icon></m3e-icon-button>
+        <m3e-tooltip for="customize">Tùy chỉnh</m3e-tooltip>
+        
+        <forge-popover anchor="this-week-customize" arrow placement="top" position-strategy="fixed" shift="false" hide="anchor-hidden" style="--forge-popover-background: var(--md-sys-color-surface-container-high); --forge-popover-border-color: #00000000">
+          <forge-scaffold style="padding: 10px;">
+            <div slot="body" style="width: 300px; padding: var(--forge-spacing-medium);">
+              <span>Ngày bắt đầu tuần đầu tiên</span>
+              <m3e-form-field variant="filled" style="width: 100%;">
+                <input type="date" id="start-date" value=""></input>
+              </m3e-form-field>
+              <span>Ngày kết thúc tuần cuối cùng</span>
+              <m3e-form-field variant="filled" style="width: 100%;">
+                <input type="date" id="end-date" value=""></input>
+              </m3e-form-field>
+              <span>Số tuần đánh giá</span>
+              <m3e-form-field variant="filled" style="width: 100%;">
+                <input type="number" id="nums-of-week" value=""></input>
+              </m3e-form-field>
+            </div>
+            <div slot="footer" style="display: flex; justify-content: end;">
+              <m3e-button variant="filled" id="save" save-info="#start-date,#end-date,#nums-of-week" save-target="studentWeekRating"><m3e-icon name="check"></m3e-icon> Lưu</m3e-button>
+            </div>
+          </forge-scaffold>
+        </forge-popover>
+      </m3e-list-item>
+
+
+      <m3e-dialog id="violations-detailed-dialog" dismissible>
+        <span slot="header">Hạn chế - Tuần từ <span class="fromto"></span></span>
+        <!--show list if there are violations-->
+        <!--else show empty UI state by putting display flex to .empty-state and display none to m3e-list-->
+        <m3e-list variant="segmented" style="width: 500px; display: none;">
+          <!--example structure of a violation notification-->
+          <m3e-list-item>
+            <m3e-icon name="person" slot="leading"></m3e-icon>
+            <span>Nguyễn Văn A</span>
+            <span slot="supporting-text" class="specific-violation">1 lỗi ăn quà trong giờ</span>
+            <m3e-icon-button slot="trailing" id="check-item-39320209394"><m3e-icon name="check"></m3e-icon></m3e-icon-button>
+            <m3e-tooltip for="check-item-39320209394">Đã hiểu</m3e-tooltip>
+          </m3e-list-item>
+          <m3e-list-item>
+            <m3e-icon name="person" slot="leading"></m3e-icon>
+            <span>Nguyễn Văn B</span>
+            <span slot="supporting-text" class="specific-violation">1 lỗi đeo thẻ muộn</span> <!--collect data that user typed in-->
+            <m3e-icon-button slot="trailing" id="check-item-39881718383"><m3e-icon name="check"></m3e-icon></m3e-icon-button>
+            <m3e-tooltip for="check-item-39881718383">Đã hiểu</m3e-tooltip>
+          </m3e-list-item>
+        </m3e-list>
+        <div class="empty-state" style="display: flex;">
+          <img src="/empty-ui.webp" style="width: 256px;" alt="">
+          <m3e-heading variant="headline" size="small">Không có hạn chế</m3e-heading>
+        </div>
+      </m3e-dialog>
+      <br>
+      <span class="heading">Phân tích học sinh</span>
+      <br>
+      <m3e-list variant="segmented" class="students-list">
+        <m3e-list-action onclick="document.querySelector('m3e-dialog#student-info').setAttribute('open','')">
+          <m3e-icon name="person" slot="leading"></m3e-icon>
+          <span>Nguyễn Văn A</span>
+          <span slot="supporting-text" class="general-ranking">Nề nếp: <span class="status"></span>, Học tập: <span class="status"></span>. Điểm thi đua tuần này: <span class="this-week-points"></span></span>
+          <m3e-icon-button slot="trailing"><m3e-icon name="arrow_forward"></m3e-icon></m3e-icon-button>
+        </m3e-list-action>
+        <!--Dynamically render students of that class-->
+      </m3e-list>
+      <!--Dialog show info of selected student-->
+      <!--each student has their own id, so when user click on a student, we will get their id and open the dialog with that id-->
+      <m3e-dialog id="student-info" student-id="" dismissible style="--m3e-dialog-max-width: 1920px">
+        <span slot="header">Thông tin: <span class="name"></span></span>
+        <br>
+        <div style="display: flex; gap: 10px;">
+          <m3e-avatar style="width: 50px; height: 50px;">
+            <m3e-icon name="person"></m3e-icon>
+          </m3e-avatar>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <span class="name heading" style="font-size: 24px;">Nguyễn Văn A</span>
+            <span class="general-ranking">Nề nếp: <span class="status"></span>, Học tập: <span class="status"></span>. Điểm thi đua tuần này: <span class="this-week-points"></span></span>
+          </div>
+        </div>
+        <br>
+        <m3e-list variant="segmented" style="width: 700px;">
+          <m3e-list-action onclick="document.querySelector('m3e-dialog#average-disclipine').setAttribute('open','')">
+            <m3e-icon name="info" slot="leading"></m3e-icon>
+            <span>Điểm trung bình thi đua cả năm </span>
+            <m3e-icon-button slot="trailing" onclick="document.querySelector('m3e-dialog#average-disclipine').setAttribute('open','')"><m3e-icon name="arrow_forward"></m3e-icon></m3e-icon-button>
+          </m3e-list-action>
+          <m3e-list-action>
+            <m3e-icon style="color:var(--md-sys-color-error);" name="delete" slot="leading"></m3e-icon>
+            <span style="color:var(--md-sys-color-error);">Xóa học sinh này</span>
+          </m3e-list-action>
+        </m3e-list>
+      </m3e-dialog>
+      <m3e-dialog id="average-disclipine" dismissible style="--m3e-dialog-max-width: 1920px">
+        <span slot="header">Điểm trung bình thi đua cả năm</span>
+        <br>
+        <div class="overall-score" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100px;">
+          <span class="heading" style="font-size: 48px;">100</span>
+          <br>
+          <span>Điểm thi đua trung bình</span>
+          <span>Từ <span class="fromto"></span></span>
+        </div>
+        <br>
+        <m3e-list variant="segmented" style="width: 600px;">
+          <m3e-list-action onclick='document.querySelector("m3e-dialog[week-id=\"week-1\"]").setAttribute("open","")'>
+            <m3e-icon name="school" slot="leading"></m3e-icon>
+            <span>Tuần 1 </span>
+            <span slot="trailing" style="font-size: larger;">100</span>
+          </m3e-list-action>
+          <m3e-list-action>
+            <m3e-icon name="school" slot="leading"></m3e-icon>
+            <span>Tuần 2 </span>
+            <span slot="trailing" style="font-size: larger;">100</span>
+          </m3e-list-action>
+          <m3e-list-action>
+            <m3e-icon name="school" slot="leading"></m3e-icon>
+            <span>Tuần 3 </span>
+            <span slot="trailing" style="font-size: larger;">100</span>
+          </m3e-list-action>
+          <m3e-list-action>
+            <m3e-icon name="school" slot="leading"></m3e-icon>
+            <span>Tuần 4 </span>
+            <span slot="trailing" style="font-size: larger;">100</span>
+          </m3e-list-action>
+          <!--generate more here based on current data-->
+          <!--show empty UI state if no data-->
+        </m3e-list>
+      </m3e-dialog>
+      <m3e-dialog id="student-week-rating" week-id="week-1" dismissible style="--m3e-dialog-max-width: 1920px">
+        <span slot="header">Đánh giá tuần <span class="week"></span> của <span class="name"></span></span>
+        <br>
+        <div class="overall-score" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100px;">
+          <span class="heading" style="font-size: 48px;">100</span>
+          <br>
+          <span>Tuần từ <span class="fromto"></span></span>
+        </div>
+        <br>
+        <m3e-accordion style="width: 600px;" multi>
+          <m3e-expansion-panel>
+            <span slot="header">Điểm thưởng</span>
+            <ul>
+              <li>Tích cực trong giờ học + 5 điểm</li>
+              <li>Giữ chuỗi làm đầy đủ btvn + 5 điểm</li>
+            </ul>
+          </m3e-expansion-panel>
+          <m3e-expansion-panel>
+            <span slot="header">Vi phạm</span>
+            <ul>
+              <li>Ăn quà trong giờ - 5 điểm</li>
+              <li>Nói chuyện riêng trong giờ - 5 điểm</li>
+            </ul>
+          </m3e-expansion-panel>
+        </m3e-accordion>
+        <br>
+        <m3e-list variant="segmented">
+          <m3e-list-action id="edit-trigger">
+            <m3e-icon name="edit" slot="leading"></m3e-icon>
+            <span>Chỉnh sửa</span>
+          </m3e-list-action>
+          <m3e-list-action onclick="confirm('Bạn có muốn xóa dữ liệu này không? Mọi dữ liệu cho thông tin này sẽ bị xóa vĩnh viễn và không thể khôi phục.')">
+            <m3e-icon name="delete" slot="leading" style="color:var(--md-sys-color-error);"></m3e-icon>
+            <span style="color:var(--md-sys-color-error);">Xóa dữ liệu</span>
+          </m3e-list-action>
+        </m3e-list>
+        <forge-popover anchor="edit-trigger" arrow placement="top" position-strategy="fixed" shift="false" hide="anchor-hidden" style="--forge-popover-background: var(--md-sys-color-surface-container-high); --forge-popover-border-color: #00000000">
+          <forge-scaffold style="padding: 10px;">
+            <div slot="body" style="width: 300px; padding: var(--forge-spacing-medium);">
+              <span>Chỉnh sửa điểm khen thưởng</span>
+              <m3e-form-field variant="filled" style="width: 100%;">
+                <label slot="label" for="good-actions">Chỉnh sửa (mỗi dòng 1 điểm thưởng)</label>
+                <textarea id="good-actions" value=""></textarea>
+              </m3e-form-field>
+              <m3e-textarea-autosize for="good-actions"></m3e-textarea-autosize>
+              <br>
+              <span>Chỉnh sửa lỗi vi phạm</span>
+              <m3e-form-field variant="filled" style="width: 100%;">
+                <label slot="label" for="violation">Chỉnh sửa (mỗi dòng 1 lỗi)</label>
+                <textarea id="violation" value=""></textarea>
+              </m3e-form-field>
+              <m3e-textarea-autosize for="violation"></m3e-textarea-autosize>
+            </div>
+            <div slot="footer" style="display: flex; justify-content: end;">
+              <m3e-button variant="filled" id="save" save-info="#good-actions,#violation" save-target="studentWeekRating"><m3e-icon name="check"></m3e-icon> Lưu</m3e-button>
+            </div>
+          </forge-scaffold>
+        </forge-popover>
+      </m3e-dialog>
+
+      <!--chart-->
+      <!--we will generate charts here-->
+      <!--first, we create a chart on ranking students on both type: discipline and studies-->
+      <!--allow user to sort and filter chart: from high to low, filter specified names by alphabet or keywords,...-->
+      <!--second, we create a chart on ranking the smartest students top 5 by default, and allow user to select how many tops to display-->
+      
+      <br>
+        <span class="heading">Xếp loại học tập của lớp <span class="class"></span></span>
+        <div id="realtime-line-graph-excellent-student"></div>
+        <!--generate realtime line graph of students from excellent to bad based on the current data-->
+        <!--allow user to sort and filter-->
+        <!--clicking a student will end up opening the student's info-->
+        <br>
+        <span class="heading">Xếp loại thi đua của lớp <span class="class"></span></span>
+        <div id="realtime-line-graph-student-discipline"></div>
+        <!--generate realtime line graph of students from excellent to bad based on the current data-->
+        <!--allow user to sort and filter-->
+        <!--clicking a student will end up opening the student's info-->
+    </section>
+
+    <section id="classes" style="display: none; padding: 24px; flex: 1; overflow-y: auto; flex-direction: column; gap: 24px;">
+      <span class="heading">Lớp <span class="class"></span></span>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px;">
+        <m3e-card><span slot="header">Tổng số học sinh</span><m3e-heading class="heading" slot="content" id="d-total-students" variant="display" size="small">-</m3e-heading></m3e-card>
+        <m3e-card><span slot="header">Số học sinh xuất sắc</span><m3e-heading class="heading" slot="content" variant="display" size="small"></m3e-heading></m3e-card>
+        <m3e-card><span slot="header">Số học sinh giỏi</span><m3e-heading class="heading" slot="content" id="d-at-risk" variant="display" size="small">-</m3e-heading></m3e-card>
+        <m3e-card><span slot="header">Số học sinh khá</span><m3e-heading class="heading" slot="content" id="d-high-achievers" variant="display" size="small">-</m3e-heading></m3e-card>
+        
+      </div>
+      <md-list-item>
+        <span class="heading">Danh sách lớp <span class="class"></span></span>
+        <div slot="end" style="display: flex; gap: 10px;">
+          <m3e-icon-button id="add-student"><m3e-icon name="add"></m3e-icon></m3e-icon-button>
+          <m3e-tooltip for="add-student">Thêm học sinh mới</m3e-tooltip>
+          
+            <forge-popover anchor="add-student" arrow placement="top" position-strategy="fixed" shift="false" hide="anchor-hidden" style="--forge-popover-background: var(--md-sys-color-surface-container-high); --forge-popover-border-color: #00000000; overflow: hidden;">
+              <forge-scaffold style="padding: 10px; height: 300px; overflow-y: scroll;">
+                <div slot="body" style="width: 300px; padding: var(--forge-spacing-medium);">
+                  <span>Tên học sinh</span><br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="student-name" value=""></input>
+                  </m3e-form-field>
+                  <br>
+                  <span>Ngày sinh</span>
+                  <br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="student-dob" type="date" value=""></input>
+                  </m3e-form-field>
+                  <br>
+                  <span>Điểm</span>
+                  <br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="student-points" type="number" value="" placeholder="100 (mặc định)"></input>
+                  </m3e-form-field>
+                  <br>
+                  <span>Xếp hạng học tập</span>
+                  <br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="student-studies" type="text" value=""></input>
+                  </m3e-form-field>
+                  <br>
+                  <span>Xếp hạng thi đua</span>
+                  <br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="student-discipline" type="text" value=""></input>
+                  </m3e-form-field>
+                </div>
+                <div slot="footer" style="display: flex; justify-content: end;">
+                  <m3e-button variant="filled" id="save" save-info="#rule-name,#rule-points" save-target="studentWeekRating"><m3e-icon name="check"></m3e-icon> Lưu</m3e-button>
+                </div>
+              </forge-scaffold>
+            </forge-popover>
+          <m3e-split-button>
+              <m3e-button slot="leading-button">
+                <m3e-icon slot="icon" name="download"></m3e-icon><span>Xuất dữ liệu</span>
+              </m3e-button>
+              <m3e-icon-button slot="trailing-button">
+                <m3e-icon name="keyboard_arrow_down"></m3e-icon>
+                <m3e-menu-trigger for="exporting-opts"></m3e-menu-trigger>
+              </m3e-icon-button>
+            </m3e-split-button>
+            <m3e-menu id="exporting-opts" position-x="before">
+              <m3e-menu-item-radio>Dưới dạng Excel (.xlsx)</m3e-menu-item-radio>
+              <m3e-menu-item-radio>Dưới dạng văn bản thuần (.txt)</m3e-menu-item-radio>
+              <m3e-menu-item-radio>Dưới dạng Markdown (.md)</m3e-menu-item-radio>
+            </m3e-menu>
+        </div>
+      </md-list-item>
+      <md-data-table aria-label="Dessert calories" paginated density="" page-sizes="[10, 25, 100]" page-sizes-label="Rows per page:" first-row-of-page="" current-page-size="" last-row-of-page="" pagination-total-label=":firstRow-:lastRow of :totalRows" style="--mdc-data-table-width: 100%;">
+        <md-data-table-column type="checkbox"></md-data-table-column>
+        <md-data-table-column sortable>Họ và tên</md-data-table-column>
+        <md-data-table-column sortable>Ngày sinh</md-data-table-column>
+        <md-data-table-column sortable>Điểm trung bình thi đua</md-data-table-column>
+        <md-data-table-column sortable>Xếp hạng thi đua</md-data-table-column>
+        <md-data-table-column sortable>Xếp hạng học tập</md-data-table-column>
+        <md-data-table-column sortable>Hành động</md-data-table-column>
+        <!--<md-data-table-row>
+          <md-data-table-cell type="checkbox"></md-data-table-cell>
+          <md-data-table-cell><input type="text" class="value-editor" value="Nguyễn Văn A"></md-data-table-cell>
+          <md-data-table-cell><input type="date" class="value-editor" value="2012-01-01"></md-data-table-cell>
+          <md-data-table-cell><input type="number" class="value-editor" value="100"></md-data-table-cell>
+          <md-data-table-cell><input type="text" class="value-editor" value="Tốt"></md-data-table-cell>
+          <md-data-table-cell><input type="text" class="value-editor" value="Tốt"></md-data-table-cell>
+          <md-data-table-cell>
+            <m3e-icon-button id="save" save-info="" save-target="studentGeneralInfo">
+              <m3e-icon name="save"></m3e-icon>
+            </m3e-icon-button>
+            <m3e-icon-button id="delete-student" onclick="confirm('Bạn có muốn xóa dữ liệu này không? Mọi dữ liệu cho thông tin này sẽ bị xóa vĩnh viễn và không thể khôi phục.')">
+              <m3e-icon style="color:var(--md-sys-color-error);" name="delete"></m3e-icon>
+            </m3e-icon-button>
+          </md-data-table-cell>
+        </md-data-table-row>
+        <md-data-table-row>
+          <md-data-table-cell type="checkbox"></md-data-table-cell>
+          <md-data-table-cell><input type="text" class="value-editor" value="Nguyễn Văn B"></md-data-table-cell>
+          <md-data-table-cell><input type="date" class="value-editor" value="2012-01-01"></md-data-table-cell>
+          <md-data-table-cell><input type="number" class="value-editor" value="100"></md-data-table-cell>
+          <md-data-table-cell><input type="text" class="value-editor" value="Tốt"></md-data-table-cell>
+          <md-data-table-cell><input type="text" class="value-editor" value="Tốt"></md-data-table-cell>
+          <md-data-table-cell>
+            <m3e-icon-button id="save" save-info="" save-target="studentGeneralInfo">
+              <m3e-icon name="save"></m3e-icon>
+            </m3e-icon-button>
+            <m3e-icon-button id="delete-student" onclick="confirm('Bạn có muốn xóa dữ liệu này không? Mọi dữ liệu cho thông tin này sẽ bị xóa vĩnh viễn và không thể khôi phục.')">
+              <m3e-icon style="color:var(--md-sys-color-error);" name="delete"></m3e-icon>
+            </m3e-icon-button>
+          </md-data-table-cell>
+        </md-data-table-row>
+        <md-data-table-row>
+          <md-data-table-cell type="checkbox"></md-data-table-cell>
+          <md-data-table-cell><input type="text" class="value-editor" value="Nguyễn Văn C"></md-data-table-cell>
+          <md-data-table-cell><input type="date" class="value-editor" value="2012-01-01"></md-data-table-cell>
+          <md-data-table-cell><input type="number" class="value-editor" value="100"></md-data-table-cell>
+          <md-data-table-cell><input type="text" class="value-editor" value="Tốt"></md-data-table-cell>
+          <md-data-table-cell><input type="text" class="value-editor" value="Tốt"></md-data-table-cell>
+          <md-data-table-cell>
+            <m3e-icon-button id="save" save-info="" save-target="studentGeneralInfo">
+              <m3e-icon name="save"></m3e-icon>
+            </m3e-icon-button>
+            <m3e-icon-button id="delete-student" onclick="confirm('Bạn có muốn xóa dữ liệu này không? Mọi dữ liệu cho thông tin này sẽ bị xóa vĩnh viễn và không thể khôi phục.')">
+              <m3e-icon style="color:var(--md-sys-color-error);" name="delete"></m3e-icon>
+            </m3e-icon-button>
+          </md-data-table-cell>
+        </md-data-table-row>-->
+        <!--generate more based on current data-->
+        <!--implement custom logic when md-data-table-column is clicked to sort the table-->
+      </md-data-table>
+    </section>
+
+    <section id="competition" style="display: none; padding: 24px; flex: 1; overflow-y: auto; flex-direction: column; gap: 24px;">
+        <md-list-item>
+          <span class="heading">Thành tích</span>
+          <div slot="end">
+            <m3e-split-button>
+              <m3e-button slot="leading-button">
+                <m3e-icon slot="icon" name="download"></m3e-icon><span>Xuất dữ liệu</span>
+              </m3e-button>
+              <m3e-icon-button slot="trailing-button">
+                <m3e-icon name="keyboard_arrow_down"></m3e-icon>
+                <m3e-menu-trigger for="exporting-opts-achievements"></m3e-menu-trigger>
+              </m3e-icon-button>
+            </m3e-split-button>
+            <m3e-menu id="exporting-opts-achievements" position-x="before">
+              <m3e-menu-item-radio>Dưới dạng Excel (.xlsx)</m3e-menu-item-radio>
+              <m3e-menu-item-radio>Dưới dạng văn bản thuần (.txt)</m3e-menu-item-radio>
+              <m3e-menu-item-radio>Dưới dạng Markdown (.md)</m3e-menu-item-radio>
+            </m3e-menu>
+          </div>
+        </md-list-item>
+        <!--show empty UI state if no data-->
+        <!--this is an example-->
+        <m3e-list class="achievements" variant="segmented">
+          <m3e-list-action><!--clicking will open its info-->
+            <m3e-icon name="trophy" slot="leading"></m3e-icon>
+            <span>Giải Nhất bóng đá Nam</span>
+            <span slot="supporting-text">Đã nhận vào ngày <span class="certified-date"></span></span>
+          </m3e-list-action>
+          <m3e-list-action><!--clicking will open its info-->
+            <m3e-icon name="trophy" slot="leading"></m3e-icon>
+            <span>Giải Nhất cuộc thi HSG cấp Xã môn Tiếng Anh 8: Đoàn Minh Đức</span>
+            <span slot="supporting-text">Đã nhận vào ngày <span class="certified-date"></span></span>
+          </m3e-list-action>
+          <m3e-list-action onclick="document.querySelector('#add-achievement').setAttribute('open','')">
+            <m3e-icon name="add" slot="leading"></m3e-icon>
+            <span>Thêm thành tích</span>
+          </m3e-list-action>
+        </m3e-list>
+
+      <m3e-dialog dismissible>
+        <span slot="header">Thành tích: <span class="achievement-name"></span></span>
+        <div class="overall-score" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100px;">
+          <m3e-icon name="trophy" style="font-size: 64px; width: 64px !important; height: 64px !important;"></m3e-icon>
+          <span>Giải Nhất bóng đá Nam 26/3</span>
+          <span>Đã nhận vào ngày <span class="certified-date"></span></span>
+        </div><br>
+        <m3e-list variant="segmented" style="width: 300px;">
+          <m3e-list-action>
+            <m3e-icon name="delete" slot="leading"></m3e-icon>
+            <span>Xóa thành tích </span>
+          </m3e-list-action>
+        </m3e-list>
+      </m3e-dialog>
+    </section>
+
+    <section id="settings"
+      style="display: none; padding: 24px; flex: 1; overflow-y: auto; flex-direction: column; gap: 24px;">
+      <span class="heading">Tùy chọn dữ liệu</span>
+      <span>Dữ liệu đang sử dụng: <span id="opening-savedata"></span></span>
+      <m3e-list variant="segmented" class="saving-opts">
+        <m3e-list-action id="new-savedata" onclick="document.querySelector('#data-manager').setAttribute('open','')">
+          <m3e-icon name="add" slot="leading"></m3e-icon>
+          <span>Dữ liệu mới</span>
+        </m3e-list-action>
+        <m3e-tooltip for="new-savedata">Tạo dữ liệu mới và lưu trữ trên ứng dụng.</m3e-tooltip>
+        <m3e-list-action id="import-savedata" onclick="document.querySelector('#import-data-dialog').setAttribute('open','')">
+          <m3e-icon name="upload" slot="leading"></m3e-icon>
+          <span>Nhập dữ liệu</span>
+        </m3e-list-action>
+        <m3e-tooltip for="import-savedata">Nhập vào dữ liệu đã có từ máy vào ứng dụng.</m3e-tooltip>
+        <m3e-list-action id="export-savedata" onclick="document.querySelector('#export-data-dialog').setAttribute('open','')">
+          <m3e-icon name="download" slot="leading"></m3e-icon>
+          <span>Xuất dữ liệu</span>
+          <!--<m3e-form-field slot="trailing">
+            <label slot="label" for="data-format">Định dạng</label>
+            <m3e-select id="data-format">
+              <m3e-option>Microsoft Excel (.xlsx)</m3e-option>
+              <m3e-option>Văn bản thuần (.txt)</m3e-option>
+              <m3e-option>Định dạng JSON (.json)</m3e-option>
+              <m3e-option>Định dạng Markdown (.md)</m3e-option>
+            </m3e-select>
+          </m3e-form-field>-->
+        </m3e-list-action>
+        <m3e-tooltip for="export-savedata">Xuất dữ liệu thành file.</m3e-tooltip>
+      </m3e-list>
+      <!--<m3e-card>
+        <m3e-heading slot="header" variant="headline" size="small">AI Phân tích Quy tắc (AI Rule Parser)</m3e-heading>
+        <div slot="content">
+          <p>Nhập các quy tắc về điểm thưởng và vi phạm vào đây. AI sẽ tự động phân tích và tạo bộ quy tắc chuẩn cho lớp
+            học.</p>
+          <md-outlined-text-field id="ai-rules-input" type="textarea" label="Quy tắc khen thưởng / kỷ luật"
+            style="width: 100%; min-height: 120px;" rows="4"></md-outlined-text-field>
+          <div style="display: flex; gap: 16px; margin-top: 16px;">
+            <md-filled-button id="btn-parse-rules">Biên dịch Quy tắc bằng AI</md-filled-button>
+          </div>
+          <p id="ai-parse-status" style="margin-top: 16px; font-weight: bold; color: var(--md-sys-color-primary);"></p>
+        </div>
+      </m3e-card>
+      <m3e-card>
+        <m3e-heading slot="header" variant="headline" size="small">Appearance</m3e-heading>
+        <div slot="content">
+          <p id="s-theme-text"></p>
+          <md-filled-tonal-button>Toggle Dark/Light Mode</md-filled-tonal-button>
+        </div>
+      </m3e-card>
+      <m3e-card>
+        <m3e-heading slot="header" variant="headline" size="small">Data Management</m3e-heading>
+        <div slot="content">
+          <p>Backup or restore your application data.</p>
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <md-filled-tonal-button id="btn-backup">Backup Data (JSON)</md-filled-tonal-button>
+            <md-filled-tonal-button id="btn-restore">Restore Data (JSON)</md-filled-tonal-button>
+            <md-filled-button id="btn-reset"
+              style="--md-filled-button-container-color: var(--md-sys-color-error); --md-filled-button-label-text-color: var(--md-sys-color-on-error)">Reset
+              All Data</md-filled-button>
+          </div>
+          <p id="settings-status" style="margin-top: 16px; font-weight: bold;"></p>
+        </div>
+      </m3e-card>-->
+    </section>
+    <m3e-dialog id="settings-dialog" dismissible style="--m3e-dialog-max-width: 1920px;width: 600px; height: 500px;">
+      <span slot="header">Cài đặt</span>
+      <div>
+        <m3e-list variant="segmented" style="width: 600px;">
+          <m3e-list-item>
+            <m3e-icon slot="leading" name="dark_mode"></m3e-icon>
+            <label for="btn-toggle-theme">Bật chế độ Tối</label>
+            <m3e-theme slot="trailing" motion="expressive" color="#0b57d0" scheme="auto">
+              <m3e-switch id="btn-toggle-theme" checked icons="both"></m3e-switch>
+            </m3e-theme>
+          </m3e-list-item>
+          <m3e-list-item>
+            <m3e-icon slot="leading" name="language"></m3e-icon>
+            <span>Ngôn ngữ</span>
+            <span slot="supporting-text">Cần khởi động lại để thay đổi các cài đặt</span>
+            <m3e-form-field slot="trailing">
+              <label slot="label" for="language">Ngôn ngữ</label>
+              <m3e-select id="language">
+                <m3e-option selected>Tiếng Việt (Vietnamese)</m3e-option>
+                <m3e-option>Tiếng Anh (English)</m3e-option>
+              </m3e-select>
+            </m3e-form-field>
+          </m3e-list-item>
+          <m3e-list-action onclick="document.querySelector('#rules-manager').setAttribute('open','')">
+            <m3e-icon slot="leading" name="rule"></m3e-icon>
+            <span>Quy tắc thưởng và phạt</span>
+          </m3e-list-action>
+          <m3e-list-action onclick="document.querySelector('#credits').setAttribute('open','')">
+            <m3e-icon slot="leading" name="info"></m3e-icon>
+            <span>Về Ứng dụng này</span>
+          </m3e-list-action>
+        </m3e-list>
+      </div>
+    </m3e-dialog>
+
+    <m3e-dialog id="rules-manager" dismissible style="--m3e-dialog-max-width: 1920px;">
+      <span slot="header">Tùy chỉnh nguyên tắc</span>
+      <m3e-list variant="segmented" style="width: 700px;">
+        <m3e-list-item>
+          <m3e-icon slot="leading" name="check"></m3e-icon>
+          <span>Điểm thưởng</span>
+          <md-outlined-text-field style="width: 100px;" slot="trailing" type="number" label="Điểm" id="added-points"></md-outlined-text-field>
+        </m3e-list-item>
+        <m3e-list-item>
+          <m3e-icon slot="leading" name="close"></m3e-icon>
+          <span>Điểm trừ</span>
+          <md-outlined-text-field style="width: 100px;" slot="trailing" type="number" label="Điểm" id="subtracted-points"></md-outlined-text-field>
+        </m3e-list-item>
+        <m3e-list-item>
+          <span>Nguyên tắc cụ thể</span><br>
+          <m3e-list variant="segmented" class="rules-list" style="width: 100%;">
+            <m3e-list-item>
+              <span>Ăn quà vặt</span>
+              <div slot="trailing" style="display: flex; gap: 10px; align-items: center;">
+                <span class="points">-10 điểm</span>
+                <m3e-icon-button id="edit-rule"><m3e-icon name="edit"></m3e-icon></m3e-icon-button>
+                <m3e-icon-button><m3e-icon name="delete"></m3e-icon></m3e-icon-button>
+              </div>
+            </m3e-list-item>
+            <forge-popover anchor="edit-rule" arrow placement="top" position-strategy="fixed" shift="false" hide="anchor-hidden" style="--forge-popover-background: var(--md-sys-color-surface-container-high); --forge-popover-border-color: #00000000">
+              <forge-scaffold style="padding: 10px;">
+                <div slot="body" style="width: 300px; padding: var(--forge-spacing-medium);">
+                  <span>Tên nội quy</span><br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="rule-name" value=""></input>
+                  </m3e-form-field>
+                  <br>
+                  <span>Điểm</span>
+                  <br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="rule-points" type="number" value=""></input>
+                  </m3e-form-field>
+                </div>
+                <div slot="footer" style="display: flex; justify-content: end;">
+                  <m3e-button variant="filled" id="save" save-info="#rule-name,#rule-points" save-target="studentWeekRating"><m3e-icon name="check"></m3e-icon> Lưu</m3e-button>
+                </div>
+              </forge-scaffold>
+            </forge-popover>
+            <m3e-list-action id="add-rule">
+              <m3e-icon name="add" slot="leading"></m3e-icon>
+              Thêm quy tắc
+            </m3e-list-action>
+            <forge-popover anchor="add-rule" arrow placement="top" position-strategy="fixed" shift="false" hide="anchor-hidden" style="--forge-popover-background: var(--md-sys-color-surface-container-high); --forge-popover-border-color: #00000000">
+              <forge-scaffold style="padding: 10px;">
+                <div slot="body" style="width: 300px; padding: var(--forge-spacing-medium);">
+                  <span>Tên nội quy</span><br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="rule-name" value=""></input>
+                  </m3e-form-field>
+                  <br>
+                  <span>Điểm</span>
+                  <br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="rule-points" type="number" value=""></input>
+                  </m3e-form-field>
+                </div>
+                <div slot="footer" style="display: flex; justify-content: end;">
+                  <m3e-button variant="filled" id="save" save-info="#rule-name,#rule-points" save-target="studentWeekRating"><m3e-icon name="check"></m3e-icon> Lưu</m3e-button>
+                </div>
+              </forge-scaffold>
+            </forge-popover>
+          </m3e-list>
+        </m3e-list-item>
+      </m3e-list>
+    </m3e-dialog>
+
+    <m3e-dialog id="create-class-dialog" dismissible
+      style="--m3e-dialog-max-width: 1920px;">
+      <span slot="header">Tạo lớp</span>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <md-outlined-text-field id="input-create-class-name" placeholder="Tên lớp"
+          style="width: 100%;"></md-outlined-text-field>
+        <div slot="actions" style="display: flex; gap: 16px; justify-content: end;">
+          <m3e-button><m3e-dialog-action return-value="ok">Đóng</m3e-dialog-action></m3e-button>
+          <m3e-button variant="filled" id="btn-create-classes">Tạo lớp</m3e-button>
+        </div>
+        <!--<p id="create-class-status" style="margin: 0; font-weight: bold; color: var(--md-sys-color-primary);"></p>--> <!--use [error] and [error-text] onto the text fields instead of seperated text element-->
+      </div>
+    </m3e-dialog>
+    <m3e-dialog id="credits" dismissible style="width: 500px; height: 500px;">
+      <span slot="header">Về ClassScore Pro</span>
+      <div style="display: flex; gap: 10px;">
+        <div style="display: flex; flex-direction: column; width: 40%;">
+          <img src="/avatar.jpg" alt="" style="width: 100px; height: 100px; border-radius: 100px;">
+          <br>
+          <span class="heading" style="font-size: 24px;">Hi, I am hair!</span><br>
+          <span>I am a junior developer and I make useful things to you.</span>
+        </div>
+        <div style="width: 60%;">
+          <span class="heading" style="font-size: 24px;">ClassScore Pro</span><br>
+          <span>Version 1.0.0</span>
+          <br><br>
+          <span>ClassScore Pro là một hệ thống phần mềm quản lý điểm số, chuyên cần, và thi đua dành cho học sinh và
+            giáo viên. Ứng dụng bao gồm các tính năng như quản lý lớp học, chấm điểm thi đua, tự động xếp hạng học sinh,
+            báo cáo và xuất dữ liệu thông minh.</span>
+          <br><br>
+          <span>Ứng dụng được viết bằng React, sử dụng Electron để tạo thành ứng dụng Windows. Ứng dụng này miễn phí và
+            mã nguồn mở.</span>
+          <br><br>
+          <md-filled-tonal-button id="fork" style="width: 100%;"> <img src="/github-ico.svg" width="128" slot="icon"
+              alt=""> Fork me on GitHub</md-filled-tonal-button><m3e-tooltip for="fork">Xem mã nguồn trên
+            GitHub</m3e-tooltip>
+        </div>
+      </div>
+    </m3e-dialog>
+
+    
+
+    <m3e-dialog id="nums-excellent-students" dismissible style="--m3e-dialog-max-width: 1920px">
+        <span slot="header">Số học sinh xuất sắc</span>
+        <br>
+        <div class="overall-score" style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100px;">
+          <span class="heading" style="font-size: 48px;">5</span>
+          <br>
+          <span>Học sinh xuất sắc</span>
+        </div>
+        <br>
+        <!--list of those students-->
+        <m3e-list variant="segmented" style="width: 600px;">
+          <m3e-list-action><!--clicking will open the student's info-->
+            <m3e-icon name="person" slot="leading"></m3e-icon>
+            <span class="name">Nguyễn Văn A </span>
+          </m3e-list-action>
+          <m3e-list-action><!--clicking will open the student's info-->
+            <m3e-icon name="person" slot="leading"></m3e-icon>
+            <span class="name">Nguyễn Văn B </span>
+          </m3e-list-action>
+          <m3e-list-action><!--clicking will open the student's info-->
+            <m3e-icon name="person" slot="leading"></m3e-icon>
+            <span class="name">Nguyễn Văn C </span>
+          </m3e-list-action>
+          <m3e-list-action><!--clicking will open the student's info-->
+            <m3e-icon name="person" slot="leading"></m3e-icon>
+            <span class="name">Nguyễn Văn D </span>
+          </m3e-list-action>
+          <m3e-list-action><!--clicking will open the student's info-->
+            <m3e-icon name="person" slot="leading"></m3e-icon>
+            <span class="name">Nguyễn Văn E </span>
+          </m3e-list-action>
+          <!--generate more here based on current data-->
+          <!--show empty UI state if no data-->
+        </m3e-list>
+      </m3e-dialog><!--the same applies to excellent and good students-->
+      <m3e-dialog id="add-achievement" dismissible style="--m3e-dialog-max-width: 1920px">
+        <span slot="header">Thêm thành tích mới</span>
+        <md-outlined-text-field id="achievement-name" label="Tên thành tích" style="width: 100%;"></md-outlined-text-field>
+        <br><br>
+        <md-outlined-text-field id="certified-date" label="Ngày nhận" style="width: 100%;"></md-outlined-text-field>
+        <div slot="actions" end>
+          <m3e-button autofocus><m3e-dialog-action return-value="ok">Đóng</m3e-dialog-action></m3e-button>
+          <m3e-button id="save-achievement" autofocus><m3e-dialog-action return-value="ok">Thêm</m3e-dialog-action></m3e-button>
+        </div>
+      </m3e-dialog>
+    <script>
+      function openCreateClassDialog() {
+        const dlg = document.getElementById('create-class-dialog');
+        if (dlg) dlg.setAttribute('open', '');
+
+        // Focus best-effort (some webcomponents may ignore focus)
+        const input = document.getElementById('input-create-class-name');
+        if (input && input.focus) input.focus();
+      }
+
+      function updateRoute() {
+        const hash = window.location.hash || '#/';
+        const sections = ['dashboard', 'classes', 'students', 'grades', 'competition', 'reports', 'settings'];
+
+        sections.forEach(s => {
+          const el = document.getElementById(s);
+          if (el) el.style.display = 'none';
+        });
+        document.querySelectorAll('m3e-nav-item').forEach(item => item.removeAttribute('selected'));
+
+        if (hash === '#/') { document.getElementById('dashboard').style.display = 'flex'; const el = document.querySelector('[onclick*="\'/\'"]'); if (el) el.setAttribute('selected', 'true'); }
+        else if (hash === '#/classes') { document.getElementById('classes').style.display = 'flex'; const el = document.querySelector('[onclick*="\'/classes\'"]'); if (el) el.setAttribute('selected', 'true'); }
+        else if (hash === '#/students') { document.getElementById('students').style.display = 'flex'; const el = document.querySelector('[onclick*="\'/students\'"]'); if (el) el.setAttribute('selected', 'true'); }
+        else if (hash === '#/grades') { document.getElementById('grades').style.display = 'flex'; const el = document.querySelector('[onclick*="\'/grades\'"]'); if (el) el.setAttribute('selected', 'true'); }
+        else if (hash === '#/competition') { document.getElementById('competition').style.display = 'flex'; const el = document.querySelector('[onclick*="\'/competition\'"]'); if (el) el.setAttribute('selected', 'true'); }
+        else if (hash === '#/reports') { document.getElementById('reports').style.display = 'flex'; const el = document.querySelector('[onclick*="\'/reports\'"]'); if (el) el.setAttribute('selected', 'true'); }
+        else if (hash === '#/settings') { document.getElementById('settings').style.display = 'flex'; const el = document.querySelector('[onclick*="\'/settings\'"]'); if (el) el.setAttribute('selected', 'true'); }
+      }
+      window.addEventListener('hashchange', updateRoute);
+      window.addEventListener('DOMContentLoaded', updateRoute);
+    </script>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script type="module" src="/src/ripple-replacer.js"></script>
+
+  <script>
+    function activateSearch(el, e) {
+      e.stopPropagation();
+      el.classList.add('active');
+    }
+
+    document.addEventListener('click', function (e) {
+      const searchBar = document.querySelector('.search_bar');
+      const searchResults = document.querySelector('.search_results');
+
+      if (
+        !searchBar.contains(e.target) &&
+        !searchResults.contains(e.target)
+      ) {
+        searchBar.classList.remove('active');
+      }
+    });
+  </script>
+
+  
+      <m3e-dialog id="data-manager" dismissible>
+        <span slot="header">Quản lý dữ liệu</span>
+        <span>Thêm, chỉnh sửa, xuất hoặc xóa dữ liệu.</span>
+        <br><br>
+        <m3e-list variant="segmented" style="width: 500px;">
+            
+            <m3e-icon-button slot="trailing">
+              <m3e-icon name="delete"></m3e-icon>
+            </m3e-icon-button>
+          </m3e-list-action>
+          <m3e-list-action id="add-new-savedata">
+            <m3e-icon name="add" slot="leading"></m3e-icon>
+            <span>Thêm dữ liệu mới</span>
+          </m3e-list-action>
+          
+        <forge-popover anchor="add-new-savedata" arrow placement="top" position-strategy="fixed" shift="false" hide="anchor-hidden" style="--forge-popover-background: var(--md-sys-color-surface-container-high); --forge-popover-border-color: #00000000">
+              <forge-scaffold style="padding: 10px;">
+                <div slot="body" style="width: 300px; padding: var(--forge-spacing-medium);">
+                  <span>Tên dữ liệu</span><br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="data-name" value=""></input>
+                  </m3e-form-field>
+                  <m3e-button variant="outlined" id="add-data">Thêm dữ liệu có sẵn</m3e-button>
+                </div>
+                <div slot="footer" style="display: flex; justify-content: end;">
+                  <m3e-button variant="filled" id="save" save-info="#data-name" save-target="dataManager"><m3e-icon name="check"></m3e-icon> Lưu</m3e-button>
+                </div>
+              </forge-scaffold>
+            </forge-popover>
+        </m3e-list>
+            <forge-popover anchor="edit-savedata-1" arrow placement="top" position-strategy="fixed" shift="false" hide="anchor-hidden" style="--forge-popover-background: var(--md-sys-color-surface-container-high); --forge-popover-border-color: #00000000">
+              <forge-scaffold style="padding: 10px;">
+                <div slot="body" style="width: 300px; padding: var(--forge-spacing-medium);">
+                  <span>Tên dữ liệu</span><br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="data-name" value="Savedata 1"></input>
+                  </m3e-form-field>
+                  <m3e-button variant="outlined" id="export-data">Xuất dữ liệu</m3e-button>
+                  <m3e-button variant="outlined" id="add-data">Thêm dữ liệu</m3e-button>
+                </div>
+                <div slot="footer" style="display: flex; justify-content: end;">
+                  <m3e-button variant="filled" id="save" save-info="#data-name" save-target="dataManager"><m3e-icon name="check"></m3e-icon> Lưu</m3e-button>
+                </div>
+              </forge-scaffold>
+            </forge-popover>
+        <forge-popover anchor="edit-savedata-2" arrow placement="top" position-strategy="fixed" shift="false" hide="anchor-hidden" style="--forge-popover-background: var(--md-sys-color-surface-container-high); --forge-popover-border-color: #00000000">
+              <forge-scaffold style="padding: 10px;">
+                <div slot="body" style="width: 300px; padding: var(--forge-spacing-medium);">
+                  <span>Tên dữ liệu</span><br>
+                  <m3e-form-field variant="outlined" style="width: 100%;">
+                    <input id="data-name" value="Savedata 2"></input>
+                  </m3e-form-field>
+                  <m3e-button variant="outlined" id="export-data">Xuất dữ liệu</m3e-button>
+                  <m3e-button variant="outlined" id="add-data">Thêm dữ liệu</m3e-button>
+                </div>
+                <div slot="footer" style="display: flex; justify-content: end;">
+                  <m3e-button variant="filled" id="save" save-info="#data-name" save-target="dataManager"><m3e-icon name="check"></m3e-icon> Lưu</m3e-button>
+                </div>
+              </forge-scaffold>
+            </forge-popover>
+        <div slot="actions" style="display: flex; justify-content: end; gap: 10px;">
+          <m3e-button>Hủy</m3e-button>
+        </div>
+      </m3e-dialog>
+      <m3e-dialog id="import-data-dialog" dismissible>
+        <span slot="header">Nhập dữ liệu</span>
+        <span>Bạn đang nhập dữ liệu có sẵn vào ứng dụng này.</span>
+        <br>
+        <span>Dữ liệu hiện tại sẽ được bổ sung vào ứng dụng. Để bắt đầu, hãy ấn nút tải lên và chọn tệp có định dạng .xlsx / .txt / .json / .md</span>
+        <br><br>
+        <div class="upload-range">
+          <m3e-icon name="upload"></m3e-icon>
+          <span>Tải lên hoặc kéo vào đây</span>
+          <input type="file">
+        </div>
+        <div class="importing-progress" style="display: none; flex-direction: column; gap: 10px;"> <!--put display:flex to show it-->
+          <br>
+          <span class="import-status">Đang nhập... (10%)</span>
+          <m3e-linear-progress-indicator variant="wavy" value="10"></m3e-linear-progress-indicator>
+        </div>
+        <div slot="actions" style="display: flex; justify-content: end; gap: 10px;">
+          <m3e-button>Hủy</m3e-button>
+        </div>
+      </m3e-dialog>
+      <m3e-dialog id="export-data-dialog" dismissible>
+        <span slot="header">Xuất dữ liệu</span>
+        <span>Bạn đang chuẩn bị xuất dữ liệu từ ứng dụng sang tệp.</span>
+        <br>
+        <span>Để xuất, hãy chọn một định dạng tệp và loại dữ liệu bạn mong muốn và ấn nút "Bắt đầu".</span>
+        <br><br>
+        <m3e-list>
+          <m3e-list-item>
+            <md-checkbox slot="leading"></md-checkbox>
+            <span>Dữ liệu phân tích</span>
+          </m3e-list-item>  
+          <m3e-list-item>
+            <md-checkbox slot="leading"></md-checkbox>
+            <span>Dữ liệu danh sách lớp</span>
+          </m3e-list-item>  
+          <m3e-list-item>
+            <md-checkbox slot="leading"></md-checkbox>
+            <span>Dữ liệu học sinh (<span class="d-total-students"></span>)</span>
+          </m3e-list-item>  
+          <m3e-list-item>
+            <md-checkbox slot="leading"></md-checkbox>
+            <span>Dữ liệu thành tích</span>
+          </m3e-list-item>
+          <m3e-list-item>
+            <md-checkbox slot="leading"></md-checkbox>
+            <span>Dữ liệu tuần ( 
+              <m3e-split-button variant="outlined">
+                <m3e-button slot="leading-button">Tuần<span class="selected-week"></span></m3e-button>
+                <m3e-icon-button slot="trailing-button">
+                  <m3e-icon name="keyboard_arrow_down"></m3e-icon>
+                  <m3e-menu-trigger for="selected-week"></m3e-menu-trigger>
+                </m3e-icon-button> 
+              </m3e-split-button> ) 
+              <m3e-menu id="selected-week" position-x="before">
+                <!--generate weeks here-->
+                <m3e-menu-item-radio>Tuần 1</m3e-menu-item-radio>
+                <m3e-menu-item-radio>Tuần 2</m3e-menu-item-radio>
+                <m3e-menu-item-radio>Tuần 3</m3e-menu-item-radio>
+              </m3e-menu>
+            </span>
+          </m3e-list-item>
+        </m3e-list>
+        <m3e-form-field style="width: 100%;">
+          <label slot="label" for="file-format">Định dạng tệp</label>
+          <m3e-select id="file-format">
+            <m3e-option>Microsoft Excel (.xlsx)</m3e-option>
+            <m3e-option>Văn bản thuần (.txt)</m3e-option>
+            <m3e-option>Tệp JSON (.json)</m3e-option>
+            <m3e-option>Văn bản Markdown (.md)</m3e-option>
+            <m3e-option>Tệp HTML (.html)</m3e-option>
+          </m3e-select>
+        </m3e-form-field>
+        <div slot="actions" style="display: flex; justify-content: end; gap: 10px;">
+          <m3e-button><m3e-dialog-action return-value="ok">Hủy</m3e-dialog-action></m3e-button>
+          <m3e-button variant="filled" id="export-with-selected">Bắt đầu</m3e-button>
+        </div>
+      </m3e-dialog>
+
+  <script>
+const switchEl = document.querySelector('m3e-switch#btn-toggle-theme');
+const parentEl = switchEl.parentElement;
+
+function syncWithSystem() {
+  const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (isDark) {
+    switchEl.setAttribute('checked', '');
+    parentEl.setAttribute('scheme', 'auto');
+  } else {
+    switchEl.removeAttribute('checked');
+    parentEl.setAttribute('scheme', 'light');
+  }
+}
+
+syncWithSystem();
+
+window.matchMedia('(prefers-color-scheme: dark)')
+  .addEventListener('change', syncWithSystem);
+
+switchEl.addEventListener('change', () => {
+  const isChecked = switchEl.hasAttribute('checked');
+
+  if (isChecked) {
+    document.documentElement.classList.add('force-light');
+    parentEl.setAttribute('scheme', 'light');
+  } else {
+    document.documentElement.classList.remove('force-light');
+    parentEl.setAttribute('scheme', 'auto');
+  }
+});
+  </script>
+</body>
+
+</html>
+
+<!--for confirming deleting a data, for example: week data, class, student,... -> ask user: confirm('Bạn có muốn xóa dữ liệu này không? Mọi dữ liệu cho thông tin này sẽ bị xóa vĩnh viễn và không thể khôi phục.')-->
