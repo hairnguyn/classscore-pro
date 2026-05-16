@@ -1,0 +1,5291 @@
+{
+  "id": "6dbaabb4-6855-42f8-8a31-3280071fd2ae",
+  "name": "8A1 25-26",
+  "language": "Tiếng Việt (Vietnamese)",
+  "weekConfig": {
+    "startDate": "2025-09-05",
+    "endDate": "2026-05-23",
+    "totalWeeks": 35
+  },
+  "scoring": {
+    "addedPoints": 10,
+    "subtractedPoints": 10,
+    "defaultClassDisciplineScore": 100
+  },
+  "rules": [
+    {
+      "id": "rule-0-0f06101f-26f3-4445-b410-4b6a6f74bdc3",
+      "category": "Học tập",
+      "reason": "Nghỉ học không phép",
+      "defaultPoints": -2,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-1-f965a959-811a-43f8-94b3-682c8ffd6e42",
+      "category": "Học tập",
+      "reason": "Vi phạm trong giờ học",
+      "defaultPoints": -5,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-2-b46ceda0-86eb-4705-bd68-f61d88294003",
+      "category": "Học tập",
+      "reason": "Không chuẩn bị bài, dụng cụ học tập",
+      "defaultPoints": -2,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-3-80782acc-b32f-428a-bcf4-2b7d25e276b8",
+      "category": "Học tập",
+      "reason": "Lỗi vi phạm ghi trong sổ đầu bài",
+      "defaultPoints": -2,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-4-7dd83abc-3d08-4eb0-8021-87988511f283",
+      "category": "Học tập",
+      "reason": "Giờ học xếp loại khá",
+      "defaultPoints": -5,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-5-a61010e4-c59c-4129-ae0f-93e1bf28853e",
+      "category": "Học tập",
+      "reason": "Giờ học xếp loại trung bình",
+      "defaultPoints": -10,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-6-32ef5e7d-603e-4f1e-9a9f-8dd4472552bd",
+      "category": "Học tập",
+      "reason": "Tuần học tốt",
+      "defaultPoints": 10,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-7-e0debb57-988f-476e-ad61-8d0b23c84568",
+      "category": "Nề nếp - Kỷ luật",
+      "reason": "Đi học muộn hoặc vi phạm nội quy",
+      "defaultPoints": -2,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-8-9eb37ac0-b8c1-41bf-a7c8-fed8bae42c37",
+      "category": "Nề nếp - Kỷ luật",
+      "reason": "Không đeo thẻ học sinh",
+      "defaultPoints": -2,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-9-fcf4a28d-41ab-490c-b0b8-ea8fb815438c",
+      "category": "Nề nếp - Kỷ luật",
+      "reason": "Đi xe trên sân trường hoặc đá bóng sai nơi quy định",
+      "defaultPoints": -2,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-10-fb96218a-7c5d-4465-a39b-8b092adc6ef9",
+      "category": "Nề nếp - Kỷ luật",
+      "reason": "Tuần không có lỗi vi phạm",
+      "defaultPoints": 10,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-11-354d6de8-def7-4c86-8ffe-25526c49d71e",
+      "category": "Sinh hoạt dưới cờ",
+      "reason": "Vắng sinh hoạt dưới cờ không có lý do",
+      "defaultPoints": -2,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-12-31e373a3-c8fa-4841-8e1a-d8713a4b68a2",
+      "category": "Sinh hoạt dưới cờ",
+      "reason": "Mất trật tự lần 2",
+      "defaultPoints": -5,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-13-f4111d69-0ead-4689-927c-9a9493e2d817",
+      "category": "Sinh hoạt dưới cờ",
+      "reason": "Mất trật tự lần 3",
+      "defaultPoints": -10,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-14-5a1c20b6-bf55-48b1-8c4d-f57af3ae4c33",
+      "category": "Văn hóa - Văn nghệ - Thể thao",
+      "reason": "Không tham gia khi được phân công",
+      "defaultPoints": -2,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-15-73a4fe4a-90a4-4196-8e03-52bba773985a",
+      "category": "Văn hóa - Văn nghệ - Thể thao",
+      "reason": "Tham gia tiết mục, thuyết trình, MC",
+      "defaultPoints": 10,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-16-144a3e17-2a3b-4e3f-b82a-2da7015a9f3e",
+      "category": "Văn hóa - Văn nghệ - Thể thao",
+      "reason": "Đạt giải phong trào",
+      "defaultPoints": 20,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-17-8024e723-2dae-40c7-9252-8992f93d9204",
+      "category": "Lao động - Vệ sinh",
+      "reason": "Không trực nhật",
+      "defaultPoints": -2,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-18-46162e5f-ae09-4c32-8e1e-9efe2a915be0",
+      "category": "Lao động - Vệ sinh",
+      "reason": "Lớp bẩn, bàn ghế chưa gọn gàng",
+      "defaultPoints": -5,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-19-31ad1b9a-f217-4773-a209-8b10b37ae931",
+      "category": "Lao động - Vệ sinh",
+      "reason": "Vứt rác sai nơi quy định",
+      "defaultPoints": -5,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-20-d7222443-abb4-468c-8c4e-4aa7644b28d6",
+      "category": "Lao động - Vệ sinh",
+      "reason": "Mang đồ ăn, thức uống vào lớp",
+      "defaultPoints": -2,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-21-04d85452-c419-44b3-8472-0fc103e25bf6",
+      "category": "Lao động - Vệ sinh",
+      "reason": "Lao động tập trung không hoàn thành",
+      "defaultPoints": -10,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-22-fe1ed513-6300-4ba3-82ca-2a3af41bd01f",
+      "category": "Lao động - Vệ sinh",
+      "reason": "Tuần sạch đẹp được xếp loại tốt",
+      "defaultPoints": 5,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-23-d60b7791-b8f5-44ec-bb64-7a4294933257",
+      "category": "Bảo vệ cơ sở vật chất",
+      "reason": "Ngồi, đứng, đi trên bàn",
+      "defaultPoints": -5,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-24-2370686b-08be-4535-9bb3-b2ac8858f021",
+      "category": "Bảo vệ cơ sở vật chất",
+      "reason": "Không tắt điện, quạt đúng quy định",
+      "defaultPoints": -5,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-25-a5cc0837-fc64-422d-baa1-1aa72aa2c13b",
+      "category": "Bảo vệ cơ sở vật chất",
+      "reason": "Viết vẽ bẩn, làm hỏng tài sản",
+      "defaultPoints": -5,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-26-73a0fcae-746e-4732-acbd-e78537e3c206",
+      "category": "Bảo vệ cơ sở vật chất",
+      "reason": "Tuần giữ gìn cơ sở vật chất tốt",
+      "defaultPoints": 5,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-27-0888b676-2952-4499-91c4-30d96435df76",
+      "category": "Công tác khác",
+      "reason": "Sáng kiến nổi bật, hành động đẹp",
+      "defaultPoints": 10,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-28-de62e511-76fc-4416-a02f-f994d0b68e67",
+      "category": "Công tác khác",
+      "reason": "Giải nhất phong trào cấp trên",
+      "defaultPoints": 20,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-29-2e82af8c-996b-41b9-8cfb-cae5d1fe4eef",
+      "category": "Công tác khác",
+      "reason": "Giải nhì phong trào cấp trên",
+      "defaultPoints": 15,
+      "scope": "student",
+      "source": "preset"
+    },
+    {
+      "id": "rule-30-969edbf9-d1cc-458a-b5fb-12c81863231e",
+      "category": "Công tác khác",
+      "reason": "Giải khuyến khích hoặc xếp hạng tiếp theo",
+      "defaultPoints": 10,
+      "scope": "student",
+      "source": "preset"
+    }
+  ],
+  "classes": [
+    {
+      "id": "class-0-51daab3c-64aa-474a-927e-76c5d6603015",
+      "name": "8A1",
+      "teacher": "",
+      "notes": "",
+      "students": [
+        {
+          "id": "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61",
+          "name": "Nguyễn Khánh An",
+          "dob": "04/01/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779296,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-1-e8d74257-c852-4065-9af9-e6e700e074f1",
+          "name": "Nguyễn Ngọc Bảo An",
+          "dob": "11/03/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-2-a314c492-6a7c-4052-aac7-ab06389e704e",
+          "name": "Nguyễn Phương Anh",
+          "dob": "17/02/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3",
+          "name": "Nguyễn Đức Bảo",
+          "dob": "22/08/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8",
+          "name": "Bùi Bảo Châu",
+          "dob": "23/10/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3",
+          "name": "Phạm Minh Châu",
+          "dob": "16/05/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755",
+          "name": "Kim Thành Đạt",
+          "dob": "07/07/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6",
+          "name": "Lại Minh Đạt",
+          "dob": "18/03/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea",
+          "name": "Đoàn Minh Đức",
+          "dob": "21/03/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e",
+          "name": "Nguyễn Minh Đức",
+          "dob": "03/08/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0",
+          "name": "Nguyễn Trường Hải",
+          "dob": "23/03/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4",
+          "name": "Ngô Gia Hân",
+          "dob": "11/07/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5",
+          "name": "Phan Nguyễn Bảo Hân",
+          "dob": "26/05/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7",
+          "name": "Quách Minh Hiệp",
+          "dob": "19/11/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d",
+          "name": "Nguyễn Xuân Hiếu",
+          "dob": "15/09/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-15-4533a54c-7d79-4718-b023-923ce510be90",
+          "name": "Nguyễn Mai Khanh",
+          "dob": "20/10/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd",
+          "name": "Nguyễn Tùng Lâm",
+          "dob": "28/12/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823",
+          "name": "Nguyễn Khánh Linh",
+          "dob": "02/07/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346",
+          "name": "Đỗ Thành Long",
+          "dob": "08/04/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-19-fce4ad5d-0e36-4db0-a806-177aca292420",
+          "name": "Lê Hiểu Long",
+          "dob": "21/11/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-20-4175b213-827d-4360-9a98-0485b6aeaa24",
+          "name": "Tăng Nguyệt Mai",
+          "dob": "22/06/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29",
+          "name": "Lại Hùng Mạnh",
+          "dob": "03/04/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0",
+          "name": "Lê Tuấn Mạnh",
+          "dob": "12/05/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7",
+          "name": "Nguyễn Nhật Minh",
+          "dob": "11/08/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-24-3c903048-8528-4c5d-8f32-b49c44010415",
+          "name": "Trần Bình Minh",
+          "dob": "16/09/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac",
+          "name": "Lăng Thành Nam",
+          "dob": "23/04/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a",
+          "name": "Nguyễn Tuấn Nam",
+          "dob": "24/07/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70",
+          "name": "Lê Thị Thu Ngân",
+          "dob": "15/01/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-28-1789c930-5b8d-452f-843e-fc82932d1602",
+          "name": "Nguyễn Thị Trang Ngân",
+          "dob": "13/11/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b",
+          "name": "Phùng Minh Nguyệt",
+          "dob": "12/11/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af",
+          "name": "Nguyễn Yến Nhi",
+          "dob": "05/02/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a",
+          "name": "Đào Thu Phương",
+          "dob": "13/10/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1",
+          "name": "Trịnh Vũ Minh Phương",
+          "dob": "01/09/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-33-afae1424-b616-49ff-86b5-7190b6b23e44",
+          "name": "Nguyễn Minh Quân",
+          "dob": "28/08/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838",
+          "name": "Trần Đại Quang",
+          "dob": "16/10/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-35-00e1674c-2922-4fdd-989a-8f1fba570416",
+          "name": "Nguyễn Bá Quốc",
+          "dob": "06/11/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379",
+          "name": "Cao Ngọc Tâm",
+          "dob": "14/08/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51",
+          "name": "Trần Phú Thanh",
+          "dob": "24/11/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-38-aa710659-8275-428b-a172-660103e7fed3",
+          "name": "Hoàng Hải Triều",
+          "dob": "11/09/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9",
+          "name": "Chu Kim Tuyến",
+          "dob": "11/09/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3",
+          "name": "Lê Phan Vũ",
+          "dob": "20/03/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        },
+        {
+          "id": "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e",
+          "name": "Nguyễn Đức Vương",
+          "dob": "26/11/2012",
+          "pob": "",
+          "score": 100,
+          "disciplineScore": 100,
+          "studyRank": "",
+          "disciplineRank": "P",
+          "notes": "",
+          "logs": [],
+          "createdAt": 1778656779298,
+          "_ensured": true,
+          "updatedAt": 1778656783945
+        }
+      ],
+      "createdAt": 1757049654778
+    }
+  ],
+  "selectedClassId": "class-0-51daab3c-64aa-474a-927e-76c5d6603015",
+  "achievements": [],
+  "rankings": [
+    {
+      "name": "Xuất sắc",
+      "min": 180,
+      "color": "#ffb300"
+    },
+    {
+      "name": "Tốt",
+      "min": 150,
+      "color": "#00c6f7"
+    },
+    {
+      "name": "Khá",
+      "min": 130,
+      "color": "#00b800"
+    },
+    {
+      "name": "Trung bình",
+      "min": 100,
+      "color": "#0073f7"
+    },
+    {
+      "name": "Yếu",
+      "min": 0,
+      "color": "#5f16c4"
+    }
+  ],
+  "studyRankings": [
+    {
+      "name": "Xuất sắc",
+      "min": 10,
+      "color": "#ffb300"
+    },
+    {
+      "name": "Tốt",
+      "min": 8,
+      "color": "#00c6f7"
+    },
+    {
+      "name": "Khá",
+      "min": 6,
+      "color": "#00b800"
+    },
+    {
+      "name": "Trung bình",
+      "min": 5,
+      "color": "#0073f7"
+    },
+    {
+      "name": "Yếu",
+      "min": 0,
+      "color": "#5f16c4"
+    }
+  ],
+  "disciplineRankings": [
+    {
+      "name": "Xuất sắc",
+      "min": 101,
+      "color": "#ffb300"
+    },
+    {
+      "name": "Tốt",
+      "min": 80,
+      "color": "#00c6f7"
+    },
+    {
+      "name": "Khá",
+      "min": 70,
+      "color": "#00b800"
+    },
+    {
+      "name": "Trung bình",
+      "min": 50,
+      "color": "#0073f7"
+    },
+    {
+      "name": "Yếu",
+      "min": 30,
+      "color": "#5f16c4"
+    }
+  ],
+  "semesters": [
+    {
+      "id": "sem-1",
+      "name": "Học kì I"
+    },
+    {
+      "id": "sem-2",
+      "name": "Học kì II"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "sub-1",
+      "name": "Toán"
+    },
+    {
+      "id": "sub-2",
+      "name": "Văn"
+    },
+    {
+      "id": "sub-3",
+      "name": "Anh"
+    },
+    {
+      "id": "sub-1778656815515",
+      "name": "KHTN"
+    },
+    {
+      "id": "sub-1778656852379",
+      "name": "Lịch sử"
+    },
+    {
+      "id": "sub-1778656892604",
+      "name": "Địa lý"
+    },
+    {
+      "id": "sub-1778656924136",
+      "name": "Tin học"
+    },
+    {
+      "id": "sub-1778656931049",
+      "name": "GDCD"
+    },
+    {
+      "id": "sub-1778656937667",
+      "name": "GDĐP"
+    },
+    {
+      "id": "sub-1778657004244",
+      "name": "Công nghệ"
+    }
+  ],
+  "subjectScores": {
+    "sem-1": {
+      "sub-1": {
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "midterm": 9.25,
+          "final": 9.75,
+          "regular": "8.25, 8.25, 9.25"
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "midterm": 8.25,
+          "final": 9.75,
+          "regular": "9.5, 8, 9.25"
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "midterm": 8.75,
+          "final": 8,
+          "regular": "9.25, 8.5, 8.25"
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "midterm": 9.25,
+          "final": 8,
+          "regular": "9.75, 9, 9.5"
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "midterm": 8,
+          "final": 8.75,
+          "regular": "9, 9.75, 9"
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "midterm": 8.75,
+          "final": 9.5,
+          "regular": "8.25, 9.75, 9"
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "midterm": 8.5,
+          "final": 9,
+          "regular": "9, 9.75, 9.25"
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "midterm": 9.75,
+          "final": 8.5,
+          "regular": "9.25, 9.25, 8.25"
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "midterm": 9.25,
+          "final": 8.75,
+          "regular": "9.5, 9, 8.25"
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "midterm": 8.5,
+          "final": 9.25,
+          "regular": "8, 8, 9.75"
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "midterm": 9.25,
+          "final": 9.5,
+          "regular": "8, 9, 9.75"
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "midterm": 9.25,
+          "final": 9.5,
+          "regular": "8, 8.5, 9.75"
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "midterm": 9.75,
+          "final": 8.75,
+          "regular": "8.25, 9.5, 9.5"
+        },
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "midterm": 8.25,
+          "final": 8.75,
+          "regular": "9.25, 8.75, 9.25"
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "midterm": 8,
+          "final": 8.25,
+          "regular": "8.25, 8.25, 9.5"
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "midterm": 9.25,
+          "final": 8.25,
+          "regular": "9.75, 9.5, 9.5"
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "midterm": 9.25,
+          "final": 9.25,
+          "regular": "9.75, 8, 8.75"
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "midterm": 8.25,
+          "final": 9,
+          "regular": "9.25, 8.5, 8"
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "midterm": 9,
+          "final": 9.75,
+          "regular": "8.5, 8.5, 9"
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "midterm": 8,
+          "final": 8.75,
+          "regular": "9, 8.75, 9.75"
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "midterm": 8,
+          "final": 9.75,
+          "regular": "8, 9.25, 9"
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "midterm": 8.5,
+          "final": 8,
+          "regular": "8.75, 9.5, 9"
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "midterm": 9.75,
+          "final": 8.75,
+          "regular": "9.5, 9.5, 9.25"
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "midterm": 8,
+          "final": 8.75,
+          "regular": "9.75, 8.25, 9"
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "midterm": 9.75,
+          "final": 8.75,
+          "regular": "8.5, 9, 9.75"
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "midterm": 8.5,
+          "final": 9.75,
+          "regular": "8, 9.75, 9"
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "midterm": 8.25,
+          "final": 8.75,
+          "regular": "8, 8.75, 8.5"
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "midterm": 9.75,
+          "final": 9.5,
+          "regular": "8, 8, 9.75"
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "midterm": 9.5,
+          "final": 8,
+          "regular": "8, 8.75, 8.5"
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "midterm": 9.5,
+          "final": 8.25,
+          "regular": "8.5, 8.25, 9.75"
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "midterm": 8.5,
+          "final": 8,
+          "regular": "9.25, 8.75, 8.5"
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "midterm": 9,
+          "final": 9.75,
+          "regular": "9.75, 9.25, 8.25"
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "midterm": 8.75,
+          "final": 8.75,
+          "regular": "8.5, 9, 8.75"
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "midterm": 8.5,
+          "final": 8.5,
+          "regular": "9.5, 8.75, 9.5"
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "midterm": 8.75,
+          "final": 9.75,
+          "regular": "9.5, 8, 9.75"
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "midterm": 9.5,
+          "final": 8.25,
+          "regular": "9.5, 8, 8.25"
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "midterm": 8.25,
+          "final": 9.25,
+          "regular": "8.75, 8.75, 9.25"
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "midterm": 8.25,
+          "final": 9.75,
+          "regular": "9, 8, 8.25"
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8.75, 9.75, 8.5",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "8.75, 9.5, 8.25",
+          "midterm": 8.5,
+          "final": 9.25
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "8, 8, 8.5",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "8.25, 8.25, 8.25",
+          "midterm": 9.5,
+          "final": 8.25
+        }
+      },
+      "sub-2": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "9.75, 8.75, 9.75",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "8.5, 8.25, 9",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9.25, 8.75, 8.75",
+          "midterm": 9,
+          "final": 8.5
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8.25, 9, 9.25",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "9.25, 8.75, 8.5",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "9.75, 9.5, 8.75",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "9, 9.5, 9",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "8.75, 8.75, 9.25",
+          "midterm": 9,
+          "final": 8.5
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "9.25, 9, 9.5",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8.75, 8, 8.25",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "9.5, 9.5, 9.25",
+          "midterm": 8,
+          "final": 8.5
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "9.5, 8.5, 9.75",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8.25, 8.5, 9",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8.5, 8.5, 9.25",
+          "midterm": 9.75,
+          "final": 9
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8, 8.25, 9",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.5, 8.5, 9.5",
+          "midterm": 9.25,
+          "final": 9
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "8.25, 9.75, 8.25",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "8.5, 8.5, 9.5",
+          "midterm": 8.5,
+          "final": 8.5
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "8, 9, 9.5",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "8.75, 9.25, 9",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "9.25, 9.25, 8.5",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8.25, 9.5, 9.25",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "8.75, 8.75, 9.5",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "8.5, 9.25, 8.5",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "9.75, 9, 9",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "9.25, 8.25, 9.25",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9.5, 8, 8.75",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "9.75, 8, 8",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "9, 8.5, 8.25",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "8.75, 8, 9.5",
+          "midterm": 9,
+          "final": 8.25
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "9.5, 8, 8.25",
+          "midterm": 9.5,
+          "final": 8.25
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "9.5, 8.75, 8.25",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "9, 9.5, 8",
+          "midterm": 9,
+          "final": 8.75
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "8.5, 9.5, 9.5",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "9.25, 8, 9.5",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "9.25, 8.5, 9.75",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "8, 8.5, 9",
+          "midterm": 9.75,
+          "final": 8.75
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9.75, 8.5, 9",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "9.25, 8, 8.75",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "9.25, 8.25, 9.75",
+          "midterm": 9.25,
+          "final": 8.25
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "9, 9.75, 9.75",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "8.5, 8, 8.25",
+          "midterm": 8,
+          "final": 8
+        }
+      },
+      "sub-3": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "8, 8.75, 8.75",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "8, 8, 9",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9.5, 8.75, 8",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8.75, 9, 8.25",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "9, 8.25, 8.25",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "9.5, 8.25, 9.5",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "9.75, 8.75, 9.25",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "8.75, 9.25, 9.5",
+          "midterm": 9.75,
+          "final": 9.5
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "9.75, 8.5, 8",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "9, 9.25, 8",
+          "midterm": 8.5,
+          "final": 8.5
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "9.5, 8.5, 9.75",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "8.5, 8, 8.75",
+          "midterm": 8,
+          "final": 9.75
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "9.5, 9.5, 8.25",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8, 8.5, 9.25",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "9.5, 8, 9.25",
+          "midterm": 8,
+          "final": 9
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.25, 9.25, 8",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "8, 9.5, 9.5",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "8.75, 9, 8",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "9.75, 9.5, 9",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "8.25, 8.5, 9.75",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "8, 8.5, 8.25",
+          "midterm": 8.5,
+          "final": 9.25
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8, 9.5, 8.5",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "8.5, 8.25, 9.75",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "8.5, 9.5, 9.75",
+          "midterm": 8.5,
+          "final": 9.75
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "8.25, 8.75, 8.75",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "9.75, 9.75, 9.5",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "8, 8.25, 9.75",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "9, 8.5, 8.5",
+          "midterm": 8.5,
+          "final": 8.5
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "8, 8.75, 8.75",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "9.5, 9, 8.25",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "8.25, 8.75, 8.25",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "9.25, 8.25, 8",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "9.25, 8, 9.5",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "8.5, 9.5, 9.5",
+          "midterm": 9,
+          "final": 8.25
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "8.25, 8, 9.75",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "9.75, 8, 9",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "9.25, 8.25, 8.5",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9, 8.25, 8.5",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "9.75, 9.75, 9",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "8, 8.5, 9.75",
+          "midterm": 8.75,
+          "final": 8.25
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "8.25, 9.75, 8.75",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "8.25, 9.5, 9.5",
+          "midterm": 8.75,
+          "final": 9.75
+        }
+      },
+      "sub-1778656815515": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "8.25, 9.75, 9.25",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9.5, 8.5, 8.75",
+          "midterm": 9,
+          "final": 8.5
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "8.5, 8, 8.25",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "9.5, 8.5, 8.75",
+          "midterm": 8.5,
+          "final": 9.75
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "9.75, 9, 8.5",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "8.5, 8.5, 8.25",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "9.5, 9, 9.5",
+          "midterm": 9.25,
+          "final": 8.25
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "9.5, 9.75, 8.25",
+          "midterm": 9.25,
+          "final": 8.25
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "9.25, 8.5, 9.75",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "9.25, 8, 8",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "9, 9, 9.75",
+          "midterm": 9,
+          "final": 8.25
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "8, 9.5, 9.75",
+          "midterm": 8.5,
+          "final": 9.5
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8, 8.25, 8.5",
+          "midterm": 8.5,
+          "final": 8.75
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "9.75, 9.5, 9.75",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "9.5, 9, 9.75",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.25, 8, 8.25",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "8.25, 8.25, 9.5",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "8.25, 9.25, 9",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "8, 9.75, 9",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "9, 9, 8",
+          "midterm": 8.5,
+          "final": 9.75
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "8.25, 8.75, 9.25",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "9, 9.75, 8.5",
+          "midterm": 9,
+          "final": 8.25
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "9, 9.25, 8",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "8.75, 9.75, 9.75",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "8.25, 9, 9.75",
+          "midterm": 9.75,
+          "final": 9
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "8.5, 8.25, 9.5",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9, 8, 8.5",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "9.5, 8.75, 8.5",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "8, 8.5, 8.5",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "8.25, 9, 9",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "8, 9.5, 8.75",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "8, 8.25, 8",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "8.75, 8.25, 9.75",
+          "midterm": 9.75,
+          "final": 9.5
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "8, 9.25, 8.25",
+          "midterm": 8,
+          "final": 9
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "8.25, 9.75, 9",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "9, 9, 9.5",
+          "midterm": 8.5,
+          "final": 9.25
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "8, 8.75, 9",
+          "midterm": 8.75,
+          "final": 8
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9.25, 8.25, 9",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "8.75, 9.25, 9.75",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "8.5, 8.5, 8.75",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "9.5, 9.75, 9.25",
+          "midterm": 8.5,
+          "final": 8.25
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "9, 9.25, 8.75",
+          "midterm": 9.25,
+          "final": 9.75
+        }
+      },
+      "sub-1778656852379": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "8.5, 8.75, 8.25",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9.25, 8.25, 8",
+          "midterm": 9.5,
+          "final": 8.75
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9.5, 8.75, 9.75",
+          "midterm": 8,
+          "final": 9.75
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "9.75, 8, 8.5",
+          "midterm": 8,
+          "final": 8.5
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "8.5, 8.25, 9.75",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "9.75, 9, 8.75",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "8.5, 8.75, 9.75",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "8.5, 9.5, 9.5",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8.5, 8.25, 8.5",
+          "midterm": 9.75,
+          "final": 8.75
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "9.5, 8, 9.25",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "9.75, 8.75, 9.25",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "8.5, 8.5, 9.75",
+          "midterm": 9.75,
+          "final": 9
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8, 9, 9.75",
+          "midterm": 9.25,
+          "final": 8.25
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8.75, 8.75, 8.75",
+          "midterm": 9.5,
+          "final": 8.25
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "9.75, 8.5, 8.5",
+          "midterm": 8.5,
+          "final": 9.25
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "8.75, 8.5, 8.25",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "9.5, 8.25, 8.25",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "9.5, 9.25, 9.5",
+          "midterm": 9.25,
+          "final": 8.25
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "8, 9.75, 9",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "8.75, 9, 9",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "8.25, 9, 9.5",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "9.75, 9.5, 9.5",
+          "midterm": 8,
+          "final": 9.5
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "8.5, 8.25, 9.5",
+          "midterm": 8.5,
+          "final": 8.25
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "9.75, 8.75, 8.75",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "9.75, 8.75, 8",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "8, 8.5, 9.75",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9, 8, 9.75",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "9.5, 9.75, 8.75",
+          "midterm": 8.5,
+          "final": 8.75
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "9.25, 9, 9",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "9.75, 8, 9",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "8.75, 9, 8.25",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "9.75, 9.75, 9.5",
+          "midterm": 9,
+          "final": 8.25
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "9.75, 8.75, 8.75",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "8.5, 8.25, 9.25",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "9.25, 9.25, 9",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "9.75, 8.25, 9.25",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "8.25, 8.75, 9.25",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9.25, 9.5, 9.5",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "9.5, 8.25, 8",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "9.25, 9.25, 8",
+          "midterm": 9.5,
+          "final": 8.75
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "8.5, 9.75, 9",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "8.75, 9.25, 8",
+          "midterm": 9,
+          "final": 9.75
+        }
+      },
+      "sub-1778656892604": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "9.25, 8, 8.75",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "8.75, 9.25, 9.75",
+          "midterm": 8,
+          "final": 9.5
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "8.25, 8.75, 8.75",
+          "midterm": 9.5,
+          "final": 8.75
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "9.75, 8.75, 9.5",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "9.75, 8.25, 9.5",
+          "midterm": 8.5,
+          "final": 8.5
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "8.75, 8.75, 8.75",
+          "midterm": 8.5,
+          "final": 8.75
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "9, 8.25, 9",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "9.5, 9, 8",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8, 9.25, 8.75",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8.75, 9.5, 9",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "8.5, 8.5, 8.75",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "9.75, 8.5, 9.5",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "9.25, 9.5, 8.5",
+          "midterm": 8.5,
+          "final": 8.75
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8, 9, 8.5",
+          "midterm": 9.75,
+          "final": 9.75
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "9.25, 9.75, 8",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.5, 9.25, 8.75",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "8.75, 8, 8.25",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "8, 9.25, 8.25",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "8.75, 9.5, 9",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "8.75, 9.75, 9.5",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "9.5, 8.5, 8",
+          "midterm": 9.75,
+          "final": 9.5
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "9.75, 8.25, 9",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "8, 8.75, 8.5",
+          "midterm": 9.25,
+          "final": 9
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "8.5, 8.5, 9",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "9.5, 9.25, 8.25",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "8, 9, 9",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "8.25, 8.75, 8.75",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "9.5, 8.25, 8.75",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "8.75, 8, 8.75",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "9.5, 8.25, 9.75",
+          "midterm": 9,
+          "final": 8.25
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "9.5, 9.5, 9.75",
+          "midterm": 8.75,
+          "final": 8.25
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "9.5, 9.25, 9",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "9.5, 8.5, 8.75",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "9, 8.75, 8.5",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "9.75, 9.25, 9.5",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "8, 9, 9.25",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "9.75, 8.5, 8.25",
+          "midterm": 9.75,
+          "final": 8.75
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9.25, 8.5, 9",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "9.5, 9.75, 9.25",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "8, 8.25, 9.25",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "9.25, 9.25, 8.75",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "8.25, 9.5, 9",
+          "midterm": 9.75,
+          "final": 8.75
+        }
+      },
+      "sub-1778656924136": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "9.25, 9, 9.25",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9, 9.25, 8",
+          "midterm": 8,
+          "final": 8.5
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9.75, 9.75, 9.75",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8.75, 9, 8",
+          "midterm": 9.75,
+          "final": 9.75
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "9.75, 8.5, 8",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "9.5, 8.75, 8.75",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "9.75, 9, 9",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "8, 9.5, 9",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8, 8.25, 8.75",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8.75, 9.25, 8.75",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "8.75, 9.25, 9.5",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "9, 9.5, 8.75",
+          "midterm": 9,
+          "final": 8.5
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8.25, 9.75, 8",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8.5, 8.75, 9.5",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8.25, 8.5, 8.5",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.25, 9.25, 9.5",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "8.75, 8.5, 8",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "9.5, 8.75, 9.75",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "8.25, 8.25, 9.5",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "9, 8.25, 9.75",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "9.5, 9.75, 8.5",
+          "midterm": 9,
+          "final": 8.75
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8.75, 8.5, 9.25",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "9.25, 8.25, 9.25",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "8.25, 8.25, 8",
+          "midterm": 9.25,
+          "final": 9.25
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "8.5, 8.5, 8",
+          "midterm": 9.75,
+          "final": 8.75
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "8.75, 9, 9.5",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9, 8, 9.75",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "9.25, 8.25, 8.25",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "9, 9, 9.75",
+          "midterm": 9,
+          "final": 8.5
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "9.5, 8.75, 9",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "9.75, 8.75, 8",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "9.75, 9.5, 9.75",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "8.25, 8.5, 8.75",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "8.5, 9, 9.75",
+          "midterm": 8,
+          "final": 9.75
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "8, 8.75, 9.25",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "8.75, 8.5, 8.25",
+          "midterm": 8.5,
+          "final": 8.5
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "9.5, 9.5, 9.5",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "8.25, 9, 8.25",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "9.75, 8, 8.75",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "8.5, 9.5, 9.25",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "8.5, 8.25, 8.75",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "9.25, 9.75, 8.75",
+          "midterm": 8.5,
+          "final": 8.75
+        }
+      },
+      "sub-1778656931049": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "8.5, 8.25, 9.5",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9.5, 8, 8.5",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9, 9.5, 8",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8, 9.25, 9.75",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "8.5, 8, 9",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "8.25, 8.75, 8.25",
+          "midterm": 8.5,
+          "final": 9.5
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "8.75, 9.25, 9.75",
+          "midterm": 9.25,
+          "final": 9
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "9.75, 9.75, 8",
+          "midterm": 9.75,
+          "final": 9.75
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8.25, 9.5, 9.5",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "9.25, 9.75, 9.25",
+          "midterm": 8.5,
+          "final": 8.5
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "9, 8.75, 8.25",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "9, 8.75, 9",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "9, 8, 9.75",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8.75, 9.25, 9",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "9, 8.75, 9.75",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.5, 9.5, 9.75",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "9.75, 9.75, 9.75",
+          "midterm": 9.75,
+          "final": 9.5
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "9.5, 9.75, 9",
+          "midterm": 9.25,
+          "final": 9
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "9, 9.75, 8.5",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "9.25, 9.25, 8.5",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "9, 9.5, 8.75",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8.25, 9.5, 8.5",
+          "midterm": 9.75,
+          "final": 9.5
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "8.75, 9, 9.75",
+          "midterm": 9.75,
+          "final": 9.75
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "8.25, 9.25, 9.5",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "8, 8.25, 8.75",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "9.5, 9.75, 8",
+          "midterm": 9.75,
+          "final": 9.75
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9, 9, 8.5",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "8, 8, 8",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "8.5, 9.25, 9.75",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "8, 9, 8.5",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "9, 8.25, 9.25",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "8.25, 8, 8.5",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "8.5, 8.5, 9.5",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "8, 8.25, 9",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "8.25, 9.5, 8.5",
+          "midterm": 9.75,
+          "final": 9.5
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "8.75, 8.75, 9.5",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "8.75, 9.25, 9.75",
+          "midterm": 9.5,
+          "final": 8.25
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "8, 8, 9.25",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "9.5, 9, 8.25",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "9.5, 9.25, 8.75",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "8.75, 9, 9.75",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "9, 8.75, 9.25",
+          "midterm": 9.25,
+          "final": 9.5
+        }
+      },
+      "sub-1778656937667": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "9.5, 8.75, 9.25",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "8.25, 8.25, 9",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9, 9.5, 8.5",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "9, 9.25, 8.5",
+          "midterm": 8.5,
+          "final": 8.25
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "8.5, 8.25, 8",
+          "midterm": 9.75,
+          "final": 9.75
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "8.5, 9.5, 9.75",
+          "midterm": 9,
+          "final": 9
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "9.25, 8.25, 9.75",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "9.25, 9.25, 9.5",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8.5, 8.5, 8.75",
+          "midterm": 8.75,
+          "final": 8.25
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8.25, 9.75, 8",
+          "midterm": 8.75,
+          "final": 8
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "9, 8.25, 8.25",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "8.25, 9.25, 9",
+          "midterm": 9.25,
+          "final": 9
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8.25, 8.5, 9.25",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8.75, 9, 9",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8.5, 8.25, 8.25",
+          "midterm": 9,
+          "final": 9
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "8.75, 9.5, 9.25",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "8, 9.75, 8.25",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "8, 9.75, 9",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "9, 9, 9.25",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "9.25, 8.25, 8",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "8.25, 9.75, 8.25",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8.5, 9.75, 9.25",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "9.5, 9.25, 8",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "9.5, 8.5, 8.5",
+          "midterm": 8.5,
+          "final": 9.25
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "9.75, 9.25, 9.5",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "9, 8.75, 9.75",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9.5, 8, 9.25",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "9.75, 8.75, 8",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "8.25, 8.5, 8.75",
+          "midterm": 9.75,
+          "final": 8.75
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "8.25, 9.75, 8.5",
+          "midterm": 8.5,
+          "final": 8.75
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "9.75, 9.5, 8",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "8, 8.75, 8",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "8, 8, 8",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "8.5, 8.25, 8.75",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "8, 8.25, 9",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "9.5, 9.25, 8.25",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "9.5, 9.5, 8.75",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "8.5, 8, 8.75",
+          "midterm": 8,
+          "final": 9
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "8, 8.5, 8",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "9.5, 8, 9",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "9.5, 9.5, 9.25",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "9.25, 8, 9",
+          "midterm": 8.75,
+          "final": 9
+        }
+      },
+      "sub-1778657004244": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "8.75, 9.25, 9.75",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9.5, 8, 8.5",
+          "midterm": 9.5,
+          "final": 8.75
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9.25, 8, 8.5",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "9.25, 8, 9",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "8.25, 9.25, 9.25",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "9.5, 9.5, 9.25",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "8.5, 8.25, 9.5",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "9.5, 9.25, 9",
+          "midterm": 8.75,
+          "final": 8.25
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8.25, 9.5, 9.75",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8.75, 9.25, 8.5",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "8, 8.75, 8",
+          "midterm": 9.25,
+          "final": 9
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "9.75, 9.5, 8.5",
+          "midterm": 9,
+          "final": 8.25
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8.25, 9.75, 8",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "9.5, 8, 8.25",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8.5, 8.25, 8.5",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.75, 9.25, 8.75",
+          "midterm": 9,
+          "final": 8.75
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "9.75, 8.5, 8",
+          "midterm": 9,
+          "final": 9
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "9.5, 8.5, 9",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "8.75, 8, 8.75",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "8.75, 8.25, 9.5",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "8, 8, 8",
+          "midterm": 8.5,
+          "final": 9.5
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8.75, 9.5, 9.25",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "9, 9.5, 9.75",
+          "midterm": 9.5,
+          "final": 8.75
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "9.75, 8, 8",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "8.75, 9.25, 8.5",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "9, 9.75, 9.25",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "8.25, 8, 8",
+          "midterm": 9,
+          "final": 9
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "8.25, 9.5, 8.5",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "9.5, 8.25, 9.25",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "8.5, 9, 9.75",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "9.5, 9.75, 8.25",
+          "midterm": 9,
+          "final": 9
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "8.25, 9.75, 9",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "8, 8.5, 9.75",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "9, 8.5, 8.75",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "8.25, 8.5, 8",
+          "midterm": 9.25,
+          "final": 9.25
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "9, 9, 8.25",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "9.75, 9, 9.25",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9, 9.5, 9.25",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "8.25, 9.5, 9.25",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "8.25, 9, 8",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "8, 8, 9.75",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "9.25, 9, 9.25",
+          "midterm": 8.25,
+          "final": 9.25
+        }
+      }
+    },
+    "sem-2": {
+      "sub-1": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "9, 8.75, 9.75",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9, 9.25, 9.75",
+          "midterm": 8.5,
+          "final": 8.25
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "8.5, 8.75, 8",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8.75, 9.75, 9.25",
+          "midterm": 9.75,
+          "final": 9.5
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "8, 8.75, 9.25",
+          "midterm": 8,
+          "final": 9
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "8, 9.5, 9.5",
+          "midterm": 9,
+          "final": 8.75
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "8.25, 9, 8",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "9, 8, 8.75",
+          "midterm": 9.25,
+          "final": 9
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "9.5, 9, 8",
+          "midterm": 8.75,
+          "final": 8
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8.25, 8.25, 8.25",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "8.25, 8, 9",
+          "midterm": 9.5,
+          "final": 8.25
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "8.25, 8.5, 9",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "9.25, 9, 9.25",
+          "midterm": 9.5,
+          "final": 8.25
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "9.75, 8.25, 8.25",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8.5, 9.5, 8.25",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.5, 9.75, 9.75",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "9.75, 8, 8",
+          "midterm": 8,
+          "final": 9
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "9, 8.25, 8.25",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "9.25, 8.75, 9.25",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "8, 9.25, 8",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "9.25, 8.5, 8.5",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "9.75, 8, 8",
+          "midterm": 8,
+          "final": 9.75
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "9, 8, 9.75",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "8, 9.75, 8.5",
+          "midterm": 8,
+          "final": 8.5
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "9, 8, 8.75",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "9.25, 9.75, 9.5",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "8.25, 9.5, 9",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "8.5, 9.5, 9",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "9.75, 8.75, 8.5",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "8.75, 9.5, 9.25",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "8.5, 9, 8",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "9.25, 8, 8",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "9, 8.25, 9.75",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "9, 8.75, 8.5",
+          "midterm": 8.75,
+          "final": 8
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "9.25, 9.25, 8.75",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "8.5, 9.75, 9.5",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "9.75, 8.5, 9.5",
+          "midterm": 9,
+          "final": 9
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "8.25, 9.5, 9.75",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "9.25, 8, 8.5",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "9, 9, 8.75",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "9.25, 9.75, 9.75",
+          "midterm": 9,
+          "final": 9
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "8.75, 8, 9",
+          "midterm": 8.5,
+          "final": 9.75
+        }
+      },
+      "sub-2": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "8.75, 9.75, 8.75",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9.75, 8.75, 9.5",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "8, 9, 8.25",
+          "midterm": 8.5,
+          "final": 9.25
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8.5, 9.25, 9.5",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "8.5, 8, 8.75",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "9.25, 9.75, 8.75",
+          "midterm": 9.25,
+          "final": 9.25
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "8, 9.25, 9.75",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "8.5, 9.5, 9.75",
+          "midterm": 8,
+          "final": 8.5
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8.75, 9.25, 8",
+          "midterm": 9.75,
+          "final": 9
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8, 9, 8",
+          "midterm": 9.75,
+          "final": 9.5
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "9.75, 8, 8.75",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "8.5, 8, 9",
+          "midterm": 9,
+          "final": 8.5
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8.75, 9.25, 9.75",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8.75, 8.75, 8.75",
+          "midterm": 9,
+          "final": 9
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8, 9.5, 9.75",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9, 8.25, 8",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "9.5, 8.5, 9.75",
+          "midterm": 8.5,
+          "final": 9.5
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "8.75, 9.25, 9",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "8.5, 9.5, 9",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "9.25, 9.5, 8.25",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "9.5, 9.75, 8",
+          "midterm": 9.75,
+          "final": 9
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8.25, 8.75, 8.75",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "9.5, 8.75, 8",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "9.5, 9.75, 8",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "8.25, 8.25, 9",
+          "midterm": 9,
+          "final": 8.75
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "9.5, 8.5, 8",
+          "midterm": 8.5,
+          "final": 9.5
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9.5, 8.5, 8",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "8.25, 9, 8.25",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "9.25, 9, 8",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "8.5, 9, 8",
+          "midterm": 9.75,
+          "final": 8.75
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "9.25, 8.25, 8.75",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "8, 9.75, 8.75",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "8.5, 9, 9.25",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "9.5, 8.75, 9.25",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "9.25, 8.75, 9.25",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "9.75, 9.5, 8.5",
+          "midterm": 9.75,
+          "final": 9.75
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "9.5, 8.75, 9.75",
+          "midterm": 9,
+          "final": 9
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9.75, 9.75, 8.25",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "8.75, 8.25, 8",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "8.5, 8.5, 8.75",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "8.75, 8.5, 9.25",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "8.5, 9.25, 8.25",
+          "midterm": 8.75,
+          "final": 8.75
+        }
+      },
+      "sub-3": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "9.75, 9, 8.5",
+          "midterm": 9.5,
+          "final": 8.75
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9, 9, 8",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "8.25, 8.25, 8.25",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "9.75, 8.25, 8.75",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "8, 8.75, 8.5",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "8.25, 9, 9.25",
+          "midterm": 8.5,
+          "final": 8.25
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "9.25, 8, 9.75",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "8, 8, 9.5",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "9, 8.25, 9.25",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "9, 8, 9.5",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "8.5, 9, 9.5",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "8, 9.25, 8.25",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "9.75, 9.25, 9.75",
+          "midterm": 8.75,
+          "final": 8.25
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8, 9.75, 8.5",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "9.75, 8, 9.25",
+          "midterm": 9.25,
+          "final": 9.25
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "8.5, 8.25, 9.75",
+          "midterm": 8,
+          "final": 9.75
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "8, 9.75, 9",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "9, 8, 8.75",
+          "midterm": 8.5,
+          "final": 9.25
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "8.25, 9, 9.75",
+          "midterm": 8.5,
+          "final": 9.25
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "9.75, 8.75, 8.75",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "9.75, 8.5, 8.5",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8.5, 8.25, 9.75",
+          "midterm": 9.75,
+          "final": 9
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "9, 8.5, 8",
+          "midterm": 9.5,
+          "final": 8.25
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "8.25, 9.5, 9.75",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "9.5, 9.25, 8.75",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "9, 8, 9.25",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9.75, 8.25, 9.5",
+          "midterm": 9.5,
+          "final": 8.25
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "8, 9.25, 9.5",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "8, 8.75, 8",
+          "midterm": 9.75,
+          "final": 9.5
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "8, 9, 9",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "8.5, 9.5, 9.25",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "9.5, 9.75, 9.75",
+          "midterm": 9,
+          "final": 8.25
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "9.75, 8.25, 8",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "8.25, 8.75, 8.25",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "9.25, 9.75, 8.5",
+          "midterm": 9.25,
+          "final": 8.25
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "9.75, 9.75, 8",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "8.25, 9.25, 8.25",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "8.25, 9.25, 8",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "9, 9.75, 8.5",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "8, 8.75, 9.5",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "9.25, 9.75, 9.5",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "9, 8.5, 9",
+          "midterm": 8.75,
+          "final": 9
+        }
+      },
+      "sub-1778656815515": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "9, 8, 8.75",
+          "midterm": 8,
+          "final": 8.5
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9, 8.5, 8.5",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9.75, 9.75, 9.75",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8, 8, 8.25",
+          "midterm": 8.75,
+          "final": 8.25
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "9.5, 9.25, 9.25",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "8.25, 8.25, 8.75",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "9.5, 8.25, 9.25",
+          "midterm": 8.75,
+          "final": 8
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "8.5, 8, 9",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8.25, 9, 8.25",
+          "midterm": 9.5,
+          "final": 8.25
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8.75, 8.75, 8.25",
+          "midterm": 8,
+          "final": 9.5
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "8.25, 8.75, 9.25",
+          "midterm": 9.25,
+          "final": 8.25
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "8, 9.25, 8.75",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8.5, 9.75, 9.25",
+          "midterm": 8.75,
+          "final": 8
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8.25, 9.25, 9",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8.25, 9.25, 8.5",
+          "midterm": 8.75,
+          "final": 8.25
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.25, 9.25, 8.5",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "9.5, 8.25, 9",
+          "midterm": 8.5,
+          "final": 8.75
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "8, 8, 8.5",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "9.5, 9, 9.25",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "9.5, 8, 8.5",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "9.5, 9.5, 9.5",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "9.5, 9.25, 9.25",
+          "midterm": 9,
+          "final": 9
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "8.75, 8.5, 9",
+          "midterm": 9,
+          "final": 8.75
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "8.75, 9.5, 9.5",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "8.25, 8.5, 9.25",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "8, 8.75, 8.75",
+          "midterm": 9,
+          "final": 8.5
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9, 9.25, 8",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "8, 9.75, 9.75",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "8, 8, 9.75",
+          "midterm": 9,
+          "final": 8.25
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "9.5, 9.5, 8",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "8.25, 9.25, 8.75",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "8.75, 9.25, 8.75",
+          "midterm": 9,
+          "final": 8.75
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "8.5, 8.25, 9.25",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "8, 9.25, 9.75",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "8.75, 8, 8.5",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "8.25, 8.75, 8",
+          "midterm": 9.5,
+          "final": 8.75
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "8.25, 8.25, 8.5",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "8, 9.75, 8.75",
+          "midterm": 9,
+          "final": 8.75
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "8, 9.5, 8.5",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "8.5, 9, 9.25",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "9.25, 9.25, 9.5",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "9, 8, 9.5",
+          "midterm": 8.75,
+          "final": 8.75
+        }
+      },
+      "sub-1778656852379": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "9.5, 9.75, 8.25",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9, 9.75, 8.75",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9.75, 9.5, 9.25",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8.75, 8, 8",
+          "midterm": 9.75,
+          "final": 8.25
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "8.25, 9.5, 8",
+          "midterm": 9.75,
+          "final": 9.5
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "8.25, 9.75, 9",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "8.75, 8.5, 8.75",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "8.25, 9.75, 8.75",
+          "midterm": 9.75,
+          "final": 9
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8.75, 9.75, 8.75",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "9.25, 9.75, 8",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "9.25, 8.5, 8.5",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "9.75, 9.75, 8",
+          "midterm": 9.5,
+          "final": 9.75
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8.5, 9.5, 9.75",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8, 8.75, 9.75",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "9, 8.25, 9.25",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "8.25, 8.5, 8.25",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "9, 9.5, 9.75",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "9.75, 8, 9.5",
+          "midterm": 8,
+          "final": 9.5
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "9.75, 8.25, 8",
+          "midterm": 8.5,
+          "final": 9.25
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "9.25, 9, 9.75",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "8.25, 8.75, 9",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8, 8, 8.25",
+          "midterm": 8,
+          "final": 9.5
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "9, 8.5, 9.5",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "8.5, 9.5, 9.75",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "8.75, 9, 9.25",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "9.75, 8, 8.5",
+          "midterm": 8.5,
+          "final": 9.25
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "8.25, 9.5, 9",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "8.5, 9.5, 9.25",
+          "midterm": 9.25,
+          "final": 9
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "8.75, 8.25, 9",
+          "midterm": 8,
+          "final": 8.5
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "8.5, 8.5, 9.75",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "8.75, 8, 9",
+          "midterm": 8.75,
+          "final": 8.25
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "8.75, 8.25, 8.25",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "9, 8.25, 8.25",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "9.5, 9, 9.25",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "8.5, 9.5, 9.75",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "8.75, 8.75, 8.75",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "9.75, 9.25, 9.25",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9.5, 9.75, 8.5",
+          "midterm": 8.75,
+          "final": 8.25
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "8.5, 9.5, 8.75",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "8.5, 8, 8.75",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "8, 9, 8.5",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "9.75, 8.75, 8.25",
+          "midterm": 9.5,
+          "final": 9
+        }
+      },
+      "sub-1778656892604": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "9, 9, 9.75",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "8.25, 9, 9.75",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9, 9.5, 8.25",
+          "midterm": 9.25,
+          "final": 8.25
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8.75, 8, 8.25",
+          "midterm": 9,
+          "final": 8.5
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "9.25, 8.75, 9.25",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "8.25, 9.75, 8.5",
+          "midterm": 9,
+          "final": 8.5
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "9.25, 8, 8.75",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "9.5, 9.25, 9.75",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "9.75, 8.5, 8.5",
+          "midterm": 8.75,
+          "final": 8.25
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8.75, 8.75, 8",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "9.25, 9.25, 9.75",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "9.75, 9.5, 9.75",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8.75, 8.75, 9.5",
+          "midterm": 8.5,
+          "final": 8.25
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8, 8, 9",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8.75, 8.25, 8",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.25, 9.75, 9.5",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "9, 8, 8.75",
+          "midterm": 9,
+          "final": 8.5
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "8, 8.75, 9",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "8.75, 9.5, 8.5",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "8.75, 8.75, 8.5",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "8.75, 9, 9.5",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "9.25, 9, 8",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "8, 9.25, 9.25",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "9.25, 9.75, 8.5",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "9.5, 9, 8.5",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "9.25, 9.5, 8",
+          "midterm": 8.75,
+          "final": 8.25
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9.75, 9, 8.5",
+          "midterm": 9.75,
+          "final": 9.5
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "9.75, 9, 8.25",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "9.5, 8, 8.25",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "9.75, 9.75, 9.25",
+          "midterm": 9.25,
+          "final": 9.25
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "8, 9, 9.75",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "8.75, 9.75, 9",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "8, 9.25, 8.75",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "8, 8.5, 8.5",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "8.25, 9.75, 9.5",
+          "midterm": 8.5,
+          "final": 9.75
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "8, 8, 8.5",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "9.75, 9, 9.75",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9.5, 9.5, 8.25",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "9.5, 9.5, 9.5",
+          "midterm": 8.5,
+          "final": 8.25
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "8.25, 9.5, 8.75",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "9.25, 8.25, 8",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "8.75, 8.25, 8.5",
+          "midterm": 8.25,
+          "final": 9
+        }
+      },
+      "sub-1778656924136": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "9, 8.5, 8.25",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "8.25, 9.5, 9",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "8.75, 9.5, 8.25",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "9.25, 9.5, 9.5",
+          "midterm": 9.75,
+          "final": 9
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "9, 8, 8.5",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "9.25, 8, 9.75",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "9.5, 8, 9.25",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "9.5, 9.75, 9.25",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "9, 9.5, 9",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "9.75, 9.25, 8",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "9.25, 9.5, 9",
+          "midterm": 8,
+          "final": 8.5
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "8.75, 8.75, 9",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "9.75, 9.25, 8",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8, 9.75, 9.5",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8, 8.25, 9.5",
+          "midterm": 8.5,
+          "final": 8.5
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.5, 8.5, 9.5",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "9.25, 8, 8.5",
+          "midterm": 8.5,
+          "final": 8.25
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "9.75, 8, 8",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "8.25, 9, 9.75",
+          "midterm": 9.25,
+          "final": 8.25
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "9.75, 8.5, 9.5",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "8.75, 8, 9.5",
+          "midterm": 8.75,
+          "final": 8
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8.75, 8.75, 8.5",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "9.5, 9.75, 9.75",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "9.5, 9.5, 8.5",
+          "midterm": 9.25,
+          "final": 9.75
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "8.5, 9.75, 8.5",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "9.75, 9.25, 9.25",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9, 9.25, 9",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "9.75, 9.25, 9.75",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "9.25, 9, 8.75",
+          "midterm": 9.25,
+          "final": 9
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "9.75, 9, 8.75",
+          "midterm": 8,
+          "final": 9.75
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "9.25, 8.5, 9.5",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "9.25, 9, 9.25",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "8, 8.5, 9.5",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "8.5, 9, 8.75",
+          "midterm": 9.25,
+          "final": 9
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "8.25, 8, 9.75",
+          "midterm": 9,
+          "final": 8.75
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "8.75, 8.75, 8.5",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "8, 8.75, 9.75",
+          "midterm": 8.5,
+          "final": 9.5
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "8.5, 9.5, 8.75",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "8.5, 9.25, 8.75",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "8.75, 9, 8.25",
+          "midterm": 9,
+          "final": 8
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "9, 8, 9.25",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "8.75, 8, 8",
+          "midterm": 9.75,
+          "final": 8
+        }
+      },
+      "sub-1778656931049": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "8, 8.75, 9.25",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9.25, 9.25, 9",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9.75, 9.5, 8.25",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8.25, 8.25, 8.25",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "8, 8, 8.25",
+          "midterm": 8,
+          "final": 9.75
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "8, 9.25, 8.5",
+          "midterm": 9.5,
+          "final": 9.5
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "8.25, 9.25, 8.25",
+          "midterm": 8.5,
+          "final": 8.25
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "8, 9.25, 9.25",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8.75, 9.5, 8",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8.25, 8.25, 8.25",
+          "midterm": 9.25,
+          "final": 9
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "8.5, 8.75, 9",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "8.75, 8.5, 9.75",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "9, 8.5, 8",
+          "midterm": 9.75,
+          "final": 9.75
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8, 9.25, 8.75",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8.5, 8.75, 9.5",
+          "midterm": 9.5,
+          "final": 8.5
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9.25, 8, 8",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "8.75, 8.75, 9",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "9.75, 9.75, 8.5",
+          "midterm": 9.75,
+          "final": 9
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "9.25, 9.5, 8.75",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "9, 8, 9.5",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "8.25, 9.75, 9.25",
+          "midterm": 9.25,
+          "final": 9.5
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "9.75, 9.75, 9",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "9.5, 8, 8.5",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "9.25, 9.25, 8.25",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "9.75, 8, 9.25",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "8.25, 9.25, 9.5",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "9, 9.5, 8",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "8.25, 8, 9",
+          "midterm": 8,
+          "final": 9
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "8, 9.25, 9.25",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "9.5, 8.25, 8.5",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "8, 8.25, 9.75",
+          "midterm": 8,
+          "final": 9
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "9.5, 8.25, 8.5",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "9.5, 9.25, 8.25",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "9.25, 8.5, 9.25",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "8, 9.25, 8.5",
+          "midterm": 9.5,
+          "final": 8.75
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "9.25, 8.75, 9.25",
+          "midterm": 8.5,
+          "final": 8.75
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "8.75, 8.5, 8.5",
+          "midterm": 8.5,
+          "final": 8.75
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9.75, 8.75, 8",
+          "midterm": 8.75,
+          "final": 9.75
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "9, 9, 9.75",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "9, 9, 8",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "8.5, 8.75, 8.25",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "9.5, 8.75, 8.75",
+          "midterm": 8.5,
+          "final": 8
+        }
+      },
+      "sub-1778656937667": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "8, 9.25, 8.5",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "8.5, 8.5, 8.25",
+          "midterm": 8,
+          "final": 9
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "9.25, 9.25, 9",
+          "midterm": 9.25,
+          "final": 9.25
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8.25, 8, 9.25",
+          "midterm": 9.5,
+          "final": 9.25
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "8.75, 8.25, 9",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "9.25, 8.75, 9.25",
+          "midterm": 8.75,
+          "final": 8
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "9.75, 9.75, 9.25",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "9.5, 8.5, 8.75",
+          "midterm": 9.5,
+          "final": 8.25
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "9.75, 8, 8.75",
+          "midterm": 8,
+          "final": 8.75
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8.5, 8, 8.25",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "8.75, 8.25, 8",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "8.25, 9.5, 8.5",
+          "midterm": 8.75,
+          "final": 9.5
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8.25, 8.5, 9.75",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8, 9.75, 8.25",
+          "midterm": 8.5,
+          "final": 8.75
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8, 8.5, 8.5",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "9, 9, 9.75",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "8, 8.25, 9.5",
+          "midterm": 8,
+          "final": 9
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "9.75, 8.75, 9",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "9.25, 9.5, 8",
+          "midterm": 9.75,
+          "final": 9
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "8.5, 8.25, 8.5",
+          "midterm": 8.5,
+          "final": 8
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "9.25, 9, 8.25",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8.25, 8, 9",
+          "midterm": 9.5,
+          "final": 8.75
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "8.5, 9.75, 9.75",
+          "midterm": 8.5,
+          "final": 9.5
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "9.75, 8.25, 8.75",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "9.5, 8.25, 9.25",
+          "midterm": 9.5,
+          "final": 9
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "8.25, 8.75, 9.25",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "8.75, 8.25, 8",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "8.25, 8.25, 8.25",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "8.5, 9, 9",
+          "midterm": 8,
+          "final": 8.25
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "9.5, 8.25, 8.5",
+          "midterm": 8.5,
+          "final": 9
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "9.75, 8, 9.25",
+          "midterm": 9.25,
+          "final": 9.25
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "9, 8, 9.5",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "8.25, 8.75, 9",
+          "midterm": 8.25,
+          "final": 8
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "9.25, 8.25, 8.75",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "9.75, 9.25, 8.25",
+          "midterm": 9,
+          "final": 8.25
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "8.75, 8, 9.75",
+          "midterm": 8.75,
+          "final": 8.5
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "8, 8, 9.5",
+          "midterm": 8.25,
+          "final": 9.25
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9.75, 9.5, 9.5",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "8.25, 8.75, 9.5",
+          "midterm": 9,
+          "final": 8.25
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "9, 9.75, 9",
+          "midterm": 8.25,
+          "final": 9.75
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "8.5, 9.5, 9.75",
+          "midterm": 9,
+          "final": 9.75
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "8.75, 9.75, 9",
+          "midterm": 8.25,
+          "final": 9.75
+        }
+      },
+      "sub-1778657004244": {
+        "student-0-070ffc8f-20f4-4ed3-b7e5-7139b5556b61": {
+          "regular": "9.5, 8, 8.5",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-1-e8d74257-c852-4065-9af9-e6e700e074f1": {
+          "regular": "9.25, 9.5, 8.25",
+          "midterm": 8.75,
+          "final": 8
+        },
+        "student-2-a314c492-6a7c-4052-aac7-ab06389e704e": {
+          "regular": "8.5, 9.25, 8.75",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-3-62c6101e-2bf2-4f45-8d39-3835715880d3": {
+          "regular": "8, 8.25, 8.5",
+          "midterm": 8.5,
+          "final": 8.5
+        },
+        "student-4-6c126532-ad6d-4b19-9d55-924a8f3023a8": {
+          "regular": "9.25, 8.75, 8.75",
+          "midterm": 8,
+          "final": 9.5
+        },
+        "student-5-fc6f6d7d-e1d3-4cfa-926e-162436735ff3": {
+          "regular": "8, 8, 9.75",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-6-ad95c7b9-617e-4d5d-9b5b-0dc537a4f755": {
+          "regular": "8.75, 8.25, 9",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-7-b21649ec-be3a-413c-bd24-e8c5dfdc69c6": {
+          "regular": "9.25, 8, 8",
+          "midterm": 8.75,
+          "final": 9
+        },
+        "student-8-a7f5b37c-c3b3-40e3-b14b-1cedfdf1ceea": {
+          "regular": "8, 8, 9.25",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-9-876751f6-efb9-4a3c-94be-735a90fe1f3e": {
+          "regular": "8.75, 8.5, 9.75",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-10-25e9b5d1-7c33-4331-b171-eb149d4e10f0": {
+          "regular": "8.25, 8.5, 9.5",
+          "midterm": 8,
+          "final": 9
+        },
+        "student-11-1ac178c3-6e04-444d-8427-ace0f6ed0ed4": {
+          "regular": "9.5, 9.75, 9",
+          "midterm": 8.75,
+          "final": 8
+        },
+        "student-12-f27773a2-2565-49bd-87b5-8c635aa119f5": {
+          "regular": "8.75, 8.5, 9",
+          "midterm": 8,
+          "final": 8
+        },
+        "student-13-f47cbdac-864c-4f51-9dda-e65566fee4f7": {
+          "regular": "8.5, 8.5, 9.25",
+          "midterm": 8,
+          "final": 9.25
+        },
+        "student-14-f3448c2f-05e9-4b3f-a468-780d3e97ae9d": {
+          "regular": "8, 8.75, 9.5",
+          "midterm": 8.25,
+          "final": 8.5
+        },
+        "student-15-4533a54c-7d79-4718-b023-923ce510be90": {
+          "regular": "8.25, 8.75, 8.5",
+          "midterm": 8.5,
+          "final": 8.25
+        },
+        "student-16-38d60077-b33a-447f-ac49-0ae9750a16bd": {
+          "regular": "9.5, 9.75, 8.75",
+          "midterm": 8.5,
+          "final": 9.5
+        },
+        "student-17-f4cedc58-6497-45b3-bdb2-b91911f10823": {
+          "regular": "9.5, 9.25, 8.5",
+          "midterm": 8,
+          "final": 9.75
+        },
+        "student-18-1da2eaec-61fc-4d6f-a64b-1c88bfd37346": {
+          "regular": "9, 8, 9.5",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-19-fce4ad5d-0e36-4db0-a806-177aca292420": {
+          "regular": "9.25, 8.5, 9.75",
+          "midterm": 8.25,
+          "final": 8.25
+        },
+        "student-20-4175b213-827d-4360-9a98-0485b6aeaa24": {
+          "regular": "8, 9.25, 8.25",
+          "midterm": 8.25,
+          "final": 9
+        },
+        "student-21-218a4493-ca1b-4c36-b7f5-18912dc83f29": {
+          "regular": "8, 9, 8.5",
+          "midterm": 9.75,
+          "final": 9
+        },
+        "student-22-44be9ed0-10de-4943-a06e-f3f87c751dc0": {
+          "regular": "9.5, 8.75, 8.75",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-23-46cfbe40-7b26-41ea-8a08-4824b0d411d7": {
+          "regular": "8.25, 8.5, 8.25",
+          "midterm": 8.75,
+          "final": 8
+        },
+        "student-24-3c903048-8528-4c5d-8f32-b49c44010415": {
+          "regular": "9.5, 8, 9.75",
+          "midterm": 8.25,
+          "final": 9.5
+        },
+        "student-25-5b2672a4-a4bf-4fd3-af3a-25ecf0407eac": {
+          "regular": "8.75, 9.5, 9.5",
+          "midterm": 8.5,
+          "final": 9.25
+        },
+        "student-26-8ec963aa-87c2-439b-ad8d-dc033198116a": {
+          "regular": "8.5, 8.75, 9.5",
+          "midterm": 9.25,
+          "final": 8
+        },
+        "student-27-2c789ca8-037a-4f81-9d77-36ee408deb70": {
+          "regular": "8.25, 9.75, 8.5",
+          "midterm": 8,
+          "final": 8.5
+        },
+        "student-28-1789c930-5b8d-452f-843e-fc82932d1602": {
+          "regular": "9.5, 9.75, 9",
+          "midterm": 9.25,
+          "final": 9.25
+        },
+        "student-29-bc4b5db5-f4d6-48aa-beb4-2840b7a3122b": {
+          "regular": "8.5, 9, 8.75",
+          "midterm": 9,
+          "final": 9.5
+        },
+        "student-30-716e6ddf-6d7f-47fc-a6e3-d9be637e04af": {
+          "regular": "9.5, 8.25, 8",
+          "midterm": 9.75,
+          "final": 9.25
+        },
+        "student-31-c217115d-ab50-46bb-af74-d2bdfeeae42a": {
+          "regular": "9.75, 9, 8.75",
+          "midterm": 8.75,
+          "final": 9.25
+        },
+        "student-32-f14aafd1-9569-4452-9dda-f3e59c25dbd1": {
+          "regular": "9.5, 9.5, 8.75",
+          "midterm": 9,
+          "final": 9
+        },
+        "student-33-afae1424-b616-49ff-86b5-7190b6b23e44": {
+          "regular": "9.25, 9.25, 8.25",
+          "midterm": 8.75,
+          "final": 8.75
+        },
+        "student-34-2c6a1bba-2d30-49a0-858d-9872fc229838": {
+          "regular": "9.25, 8, 8",
+          "midterm": 9.25,
+          "final": 8.75
+        },
+        "student-35-00e1674c-2922-4fdd-989a-8f1fba570416": {
+          "regular": "9.75, 8.25, 8.5",
+          "midterm": 9.5,
+          "final": 8
+        },
+        "student-36-3242e7b6-fb3c-4c52-8a9f-c4a157880379": {
+          "regular": "9.75, 9.25, 9.25",
+          "midterm": 9,
+          "final": 9.25
+        },
+        "student-37-9c788b6c-56f1-45a4-8d61-fec478c8eb51": {
+          "regular": "9, 9.5, 9.25",
+          "midterm": 8.25,
+          "final": 8.75
+        },
+        "student-38-aa710659-8275-428b-a172-660103e7fed3": {
+          "regular": "9, 8.25, 9.25",
+          "midterm": 9.75,
+          "final": 8.5
+        },
+        "student-39-e729b89c-6ef6-4227-832f-05d055d9dbf9": {
+          "regular": "9, 8, 8.75",
+          "midterm": 9.25,
+          "final": 8.5
+        },
+        "student-40-4d028b1d-0d6d-44e7-b551-e2bc3cc1ddc3": {
+          "regular": "9.75, 8.25, 9",
+          "midterm": 9.75,
+          "final": 8
+        },
+        "student-41-21c56e76-04cf-4e2c-9030-ec8cd9bdfb5e": {
+          "regular": "9.75, 9.75, 8",
+          "midterm": 8.25,
+          "final": 9.25
+        }
+      }
+    }
+  },
+  "selectedSemesterId": "sem-1",
+  "selectedSubjectId": "sub-1778656815515",
+  "createdAt": 1757049648737,
+  "updatedAt": 1778673817651
+}
